@@ -105,7 +105,6 @@
             this.Manager_Phone_TxtBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Manager_Phone_TxtBox.Name = "Manager_Phone_TxtBox";
             this.Manager_Phone_TxtBox.PasswordChar = '\0';
-            this.Manager_Phone_TxtBox.PlaceholderText = "ادخل سعر التركيز";
             this.Manager_Phone_TxtBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Manager_Phone_TxtBox.SelectedText = "";
             this.Manager_Phone_TxtBox.Size = new System.Drawing.Size(200, 36);
@@ -120,12 +119,9 @@
             this.Label4.Enabled = false;
             this.Label4.Font = new System.Drawing.Font("Cairo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label4.ForeColor = System.Drawing.Color.Gray;
-            this.Label4.Location = new System.Drawing.Point(495, 261);
             this.Label4.Name = "Label4";
             this.Label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Label4.Size = new System.Drawing.Size(117, 23);
             this.Label4.TabIndex = 393;
-            this.Label4.Text = "التركيز الخاص بالدواء";
             this.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Department_Phone_TxtBox
@@ -148,7 +144,6 @@
             this.Department_Phone_TxtBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Department_Phone_TxtBox.Name = "Department_Phone_TxtBox";
             this.Department_Phone_TxtBox.PasswordChar = '\0';
-            this.Department_Phone_TxtBox.PlaceholderText = "ادخل التركيز الخاص بالدواء";
             this.Department_Phone_TxtBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Department_Phone_TxtBox.SelectedText = "";
             this.Department_Phone_TxtBox.Size = new System.Drawing.Size(451, 36);

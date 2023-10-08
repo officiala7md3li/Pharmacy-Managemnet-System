@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MedicationUC));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.PictureBox2 = new System.Windows.Forms.PictureBox();
             this.Label5 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
@@ -39,25 +38,22 @@
             this.Section_ComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Manager_Phone_TxtBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.Browse_Btn = new Guna.UI2.WinForms.Guna2Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.Barcode_Txtbox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.Qty_Txt = new Guna.UI2.WinForms.Guna2TextBox();
-            this.Note_Txt = new Guna.UI2.WinForms.Guna2TextBox();
-            this.Discount_Txt = new Guna.UI2.WinForms.Guna2TextBox();
             this.Username_Pic = new A7MD_Library.Pictures.A2PictureboxPro();
-            this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Username_Pic)).BeginInit();
             this.SuspendLayout();
@@ -84,9 +80,9 @@
             this.Label5.Location = new System.Drawing.Point(367, 12);
             this.Label5.Name = "Label5";
             this.Label5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Label5.Size = new System.Drawing.Size(48, 24);
+            this.Label5.Size = new System.Drawing.Size(47, 24);
             this.Label5.TabIndex = 397;
-            this.Label5.Text = "الادويه";
+            this.Label5.Text = "الفروع";
             this.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Label3
@@ -97,7 +93,7 @@
             this.Label3.Enabled = false;
             this.Label3.Font = new System.Drawing.Font("Cairo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label3.ForeColor = System.Drawing.Color.Gray;
-            this.Label3.Location = new System.Drawing.Point(211, 91);
+            this.Label3.Location = new System.Drawing.Point(211, 140);
             this.Label3.Name = "Label3";
             this.Label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Label3.Size = new System.Drawing.Size(66, 23);
@@ -121,7 +117,7 @@
             this.Department_Name_TxtBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Department_Name_TxtBox.IconRight = ((System.Drawing.Image)(resources.GetObject("Department_Name_TxtBox.IconRight")));
             this.Department_Name_TxtBox.IconRightOffset = new System.Drawing.Point(3, 0);
-            this.Department_Name_TxtBox.Location = new System.Drawing.Point(346, 116);
+            this.Department_Name_TxtBox.Location = new System.Drawing.Point(346, 165);
             this.Department_Name_TxtBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Department_Name_TxtBox.Name = "Department_Name_TxtBox";
             this.Department_Name_TxtBox.PasswordChar = '\0';
@@ -147,7 +143,7 @@
             this.ID_TxtBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ID_TxtBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ID_TxtBox.IconLeftOffset = new System.Drawing.Point(3, 0);
-            this.ID_TxtBox.Location = new System.Drawing.Point(346, 116);
+            this.ID_TxtBox.Location = new System.Drawing.Point(346, 165);
             this.ID_TxtBox.Name = "ID_TxtBox";
             this.ID_TxtBox.PasswordChar = '\0';
             this.ID_TxtBox.PlaceholderText = "Enter Store Name";
@@ -166,7 +162,7 @@
             this.Label1.Enabled = false;
             this.Label1.Font = new System.Drawing.Font("Cairo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label1.ForeColor = System.Drawing.Color.Gray;
-            this.Label1.Location = new System.Drawing.Point(458, 91);
+            this.Label1.Location = new System.Drawing.Point(458, 140);
             this.Label1.Name = "Label1";
             this.Label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Label1.Size = new System.Drawing.Size(69, 23);
@@ -191,7 +187,7 @@
             this.Section_ComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.Section_ComboBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(201)))), ((int)(((byte)(254)))));
             this.Section_ComboBox.ItemHeight = 30;
-            this.Section_ComboBox.Location = new System.Drawing.Point(95, 116);
+            this.Section_ComboBox.Location = new System.Drawing.Point(95, 165);
             this.Section_ComboBox.Name = "Section_ComboBox";
             this.Section_ComboBox.Size = new System.Drawing.Size(199, 36);
             this.Section_ComboBox.TabIndex = 399;
@@ -206,12 +202,12 @@
             this.label2.Enabled = false;
             this.label2.Font = new System.Drawing.Font("Cairo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(189, 164);
+            this.label2.Location = new System.Drawing.Point(189, 213);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label2.Size = new System.Drawing.Size(73, 23);
+            this.label2.Size = new System.Drawing.Size(92, 23);
             this.label2.TabIndex = 403;
-            this.label2.Text = "رقم الباركود\r\n";
+            this.label2.Text = "رقم هاتف الفرع\r\n";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2TextBox1
@@ -230,11 +226,11 @@
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.IconRight = ((System.Drawing.Image)(resources.GetObject("guna2TextBox1.IconRight")));
             this.guna2TextBox1.IconRightOffset = new System.Drawing.Point(3, 0);
-            this.guna2TextBox1.Location = new System.Drawing.Point(346, 189);
+            this.guna2TextBox1.Location = new System.Drawing.Point(346, 238);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "ادخل الجرعة";
+            this.guna2TextBox1.PlaceholderText = "ادخل اسم الفرع";
             this.guna2TextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.Size = new System.Drawing.Size(200, 36);
@@ -257,7 +253,7 @@
             this.Manager_Phone_TxtBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Manager_Phone_TxtBox.IconRight = ((System.Drawing.Image)(resources.GetObject("Manager_Phone_TxtBox.IconRight")));
             this.Manager_Phone_TxtBox.IconRightOffset = new System.Drawing.Point(3, 0);
-            this.Manager_Phone_TxtBox.Location = new System.Drawing.Point(95, 228);
+            this.Manager_Phone_TxtBox.Location = new System.Drawing.Point(95, 238);
             this.Manager_Phone_TxtBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Manager_Phone_TxtBox.Name = "Manager_Phone_TxtBox";
             this.Manager_Phone_TxtBox.PasswordChar = '\0';
@@ -265,7 +261,7 @@
             this.Manager_Phone_TxtBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Manager_Phone_TxtBox.SelectedText = "";
             this.Manager_Phone_TxtBox.Size = new System.Drawing.Size(200, 36);
-            this.Manager_Phone_TxtBox.TabIndex = 425;
+            this.Manager_Phone_TxtBox.TabIndex = 401;
             this.Manager_Phone_TxtBox.TextOffset = new System.Drawing.Point(3, 0);
             // 
             // label6
@@ -276,12 +272,12 @@
             this.label6.Enabled = false;
             this.label6.Font = new System.Drawing.Font("Cairo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(458, 164);
+            this.label6.Location = new System.Drawing.Point(458, 213);
             this.label6.Name = "label6";
             this.label6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label6.Size = new System.Drawing.Size(43, 23);
+            this.label6.Size = new System.Drawing.Size(63, 23);
             this.label6.TabIndex = 402;
-            this.label6.Text = "الجرعة";
+            this.label6.Text = "اسم الفرع";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
@@ -292,12 +288,12 @@
             this.label7.Enabled = false;
             this.label7.Font = new System.Drawing.Font("Cairo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(189, 237);
+            this.label7.Location = new System.Drawing.Point(189, 286);
             this.label7.Name = "label7";
             this.label7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label7.Size = new System.Drawing.Size(90, 23);
+            this.label7.Size = new System.Drawing.Size(92, 23);
             this.label7.TabIndex = 407;
-            this.label7.Text = "سعر بيع العبوه";
+            this.label7.Text = "رقم هاتف الفرع\r\n";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2TextBox2
@@ -316,11 +312,11 @@
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.IconRight = ((System.Drawing.Image)(resources.GetObject("guna2TextBox2.IconRight")));
             this.guna2TextBox2.IconRightOffset = new System.Drawing.Point(3, 0);
-            this.guna2TextBox2.Location = new System.Drawing.Point(346, 262);
+            this.guna2TextBox2.Location = new System.Drawing.Point(346, 311);
             this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "ادخل سعر الشراء";
+            this.guna2TextBox2.PlaceholderText = "ادخل اسم الفرع";
             this.guna2TextBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.Size = new System.Drawing.Size(200, 36);
@@ -335,12 +331,12 @@
             this.label8.Enabled = false;
             this.label8.Font = new System.Drawing.Font("Cairo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Gray;
-            this.label8.Location = new System.Drawing.Point(458, 237);
+            this.label8.Location = new System.Drawing.Point(458, 286);
             this.label8.Name = "label8";
             this.label8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label8.Size = new System.Drawing.Size(70, 23);
+            this.label8.Size = new System.Drawing.Size(63, 23);
             this.label8.TabIndex = 406;
-            this.label8.Text = "سعر الشراء";
+            this.label8.Text = "اسم الفرع";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2ComboBox1
@@ -360,13 +356,12 @@
             this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.guna2ComboBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(201)))), ((int)(((byte)(254)))));
             this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(136, 408);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(95, 311);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(160, 36);
+            this.guna2ComboBox1.Size = new System.Drawing.Size(199, 36);
             this.guna2ComboBox1.TabIndex = 399;
             this.guna2ComboBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.guna2ComboBox1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
-            this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
             // label9
             // 
@@ -376,13 +371,40 @@
             this.label9.Enabled = false;
             this.label9.Font = new System.Drawing.Font("Cairo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Gray;
-            this.label9.Location = new System.Drawing.Point(232, 310);
+            this.label9.Location = new System.Drawing.Point(189, 359);
             this.label9.Name = "label9";
             this.label9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label9.Size = new System.Drawing.Size(45, 23);
+            this.label9.Size = new System.Drawing.Size(92, 23);
             this.label9.TabIndex = 411;
-            this.label9.Text = "الكميه";
+            this.label9.Text = "رقم هاتف الفرع\r\n";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // guna2TextBox3
+            // 
+            this.guna2TextBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2TextBox3.AutoRoundedCorners = true;
+            this.guna2TextBox3.BorderRadius = 17;
+            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox3.DefaultText = "";
+            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox3.Font = new System.Drawing.Font("Cairo", 9F);
+            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox3.IconRight = ((System.Drawing.Image)(resources.GetObject("guna2TextBox3.IconRight")));
+            this.guna2TextBox3.IconRightOffset = new System.Drawing.Point(3, 0);
+            this.guna2TextBox3.Location = new System.Drawing.Point(346, 384);
+            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox3.Name = "guna2TextBox3";
+            this.guna2TextBox3.PasswordChar = '\0';
+            this.guna2TextBox3.PlaceholderText = "ادخل اسم الفرع";
+            this.guna2TextBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.guna2TextBox3.SelectedText = "";
+            this.guna2TextBox3.Size = new System.Drawing.Size(200, 36);
+            this.guna2TextBox3.TabIndex = 408;
+            this.guna2TextBox3.TextOffset = new System.Drawing.Point(3, 0);
             // 
             // guna2TextBox4
             // 
@@ -400,11 +422,11 @@
             this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox4.IconRight = ((System.Drawing.Image)(resources.GetObject("guna2TextBox4.IconRight")));
             this.guna2TextBox4.IconRightOffset = new System.Drawing.Point(3, 0);
-            this.guna2TextBox4.Location = new System.Drawing.Point(96, 262);
+            this.guna2TextBox4.Location = new System.Drawing.Point(95, 384);
             this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "سعر بيع العبوه";
+            this.guna2TextBox4.PlaceholderText = "ادخل رقم هاتف الفرع";
             this.guna2TextBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2TextBox4.SelectedText = "";
             this.guna2TextBox4.Size = new System.Drawing.Size(200, 36);
@@ -419,12 +441,12 @@
             this.label10.Enabled = false;
             this.label10.Font = new System.Drawing.Font("Cairo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Gray;
-            this.label10.Location = new System.Drawing.Point(483, 310);
+            this.label10.Location = new System.Drawing.Point(458, 359);
             this.label10.Name = "label10";
             this.label10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label10.Size = new System.Drawing.Size(44, 23);
+            this.label10.Size = new System.Drawing.Size(63, 23);
             this.label10.TabIndex = 410;
-            this.label10.Text = "الخصم";
+            this.label10.Text = "اسم الفرع";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
@@ -435,12 +457,12 @@
             this.label4.Enabled = false;
             this.label4.Font = new System.Drawing.Font("Cairo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(189, 383);
+            this.label4.Location = new System.Drawing.Point(189, 432);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label4.Size = new System.Drawing.Size(81, 23);
+            this.label4.Size = new System.Drawing.Size(92, 23);
             this.label4.TabIndex = 415;
-            this.label4.Text = "تصنيف الدواء";
+            this.label4.Text = "رقم هاتف الفرع\r\n";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2TextBox5
@@ -459,16 +481,43 @@
             this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox5.IconRight = ((System.Drawing.Image)(resources.GetObject("guna2TextBox5.IconRight")));
             this.guna2TextBox5.IconRightOffset = new System.Drawing.Point(3, 0);
-            this.guna2TextBox5.Location = new System.Drawing.Point(346, 408);
+            this.guna2TextBox5.Location = new System.Drawing.Point(346, 457);
             this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox5.Name = "guna2TextBox5";
             this.guna2TextBox5.PasswordChar = '\0';
-            this.guna2TextBox5.PlaceholderText = "ادخل الموضع علي الرف";
+            this.guna2TextBox5.PlaceholderText = "ادخل اسم الفرع";
             this.guna2TextBox5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2TextBox5.SelectedText = "";
             this.guna2TextBox5.Size = new System.Drawing.Size(200, 36);
             this.guna2TextBox5.TabIndex = 412;
             this.guna2TextBox5.TextOffset = new System.Drawing.Point(3, 0);
+            // 
+            // guna2TextBox6
+            // 
+            this.guna2TextBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2TextBox6.AutoRoundedCorners = true;
+            this.guna2TextBox6.BorderRadius = 17;
+            this.guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox6.DefaultText = "";
+            this.guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox6.Font = new System.Drawing.Font("Cairo", 9F);
+            this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox6.IconRight = ((System.Drawing.Image)(resources.GetObject("guna2TextBox6.IconRight")));
+            this.guna2TextBox6.IconRightOffset = new System.Drawing.Point(3, 0);
+            this.guna2TextBox6.Location = new System.Drawing.Point(95, 457);
+            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox6.Name = "guna2TextBox6";
+            this.guna2TextBox6.PasswordChar = '\0';
+            this.guna2TextBox6.PlaceholderText = "ادخل رقم هاتف الفرع";
+            this.guna2TextBox6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.guna2TextBox6.SelectedText = "";
+            this.guna2TextBox6.Size = new System.Drawing.Size(200, 36);
+            this.guna2TextBox6.TabIndex = 413;
+            this.guna2TextBox6.TextOffset = new System.Drawing.Point(3, 0);
             // 
             // label11
             // 
@@ -478,12 +527,12 @@
             this.label11.Enabled = false;
             this.label11.Font = new System.Drawing.Font("Cairo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Gray;
-            this.label11.Location = new System.Drawing.Point(426, 381);
+            this.label11.Location = new System.Drawing.Point(458, 432);
             this.label11.Name = "label11";
             this.label11.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label11.Size = new System.Drawing.Size(102, 23);
+            this.label11.Size = new System.Drawing.Size(63, 23);
             this.label11.TabIndex = 414;
-            this.label11.Text = "الموضع علي الرف";
+            this.label11.Text = "اسم الفرع";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Browse_Btn
@@ -509,130 +558,6 @@
             this.Browse_Btn.UseTransparentBackground = true;
             this.Browse_Btn.Click += new System.EventHandler(this.Browse_Btn_Click);
             // 
-            // label12
-            // 
-            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Enabled = false;
-            this.label12.Font = new System.Drawing.Font("Cairo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Gray;
-            this.label12.Location = new System.Drawing.Point(482, 455);
-            this.label12.Name = "label12";
-            this.label12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label12.Size = new System.Drawing.Size(61, 23);
-            this.label12.TabIndex = 426;
-            this.label12.Text = "عن المنتج";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Barcode_Txtbox
-            // 
-            this.Barcode_Txtbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Barcode_Txtbox.AutoRoundedCorners = true;
-            this.Barcode_Txtbox.BorderRadius = 17;
-            this.Barcode_Txtbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Barcode_Txtbox.DefaultText = "";
-            this.Barcode_Txtbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.Barcode_Txtbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.Barcode_Txtbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Barcode_Txtbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Barcode_Txtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Barcode_Txtbox.Font = new System.Drawing.Font("Cairo", 9F);
-            this.Barcode_Txtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Barcode_Txtbox.IconRight = ((System.Drawing.Image)(resources.GetObject("Barcode_Txtbox.IconRight")));
-            this.Barcode_Txtbox.IconRightOffset = new System.Drawing.Point(3, 0);
-            this.Barcode_Txtbox.Location = new System.Drawing.Point(96, 189);
-            this.Barcode_Txtbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Barcode_Txtbox.Name = "Barcode_Txtbox";
-            this.Barcode_Txtbox.PasswordChar = '\0';
-            this.Barcode_Txtbox.PlaceholderText = "ادخل الكود الرمزي";
-            this.Barcode_Txtbox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Barcode_Txtbox.SelectedText = "";
-            this.Barcode_Txtbox.Size = new System.Drawing.Size(200, 36);
-            this.Barcode_Txtbox.TabIndex = 419;
-            this.Barcode_Txtbox.TextOffset = new System.Drawing.Point(3, 0);
-            // 
-            // Qty_Txt
-            // 
-            this.Qty_Txt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Qty_Txt.AutoRoundedCorners = true;
-            this.Qty_Txt.BorderRadius = 17;
-            this.Qty_Txt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Qty_Txt.DefaultText = "";
-            this.Qty_Txt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.Qty_Txt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.Qty_Txt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Qty_Txt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Qty_Txt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Qty_Txt.Font = new System.Drawing.Font("Cairo", 9F);
-            this.Qty_Txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Qty_Txt.IconRight = ((System.Drawing.Image)(resources.GetObject("Qty_Txt.IconRight")));
-            this.Qty_Txt.IconRightOffset = new System.Drawing.Point(3, 0);
-            this.Qty_Txt.Location = new System.Drawing.Point(96, 335);
-            this.Qty_Txt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Qty_Txt.Name = "Qty_Txt";
-            this.Qty_Txt.PasswordChar = '\0';
-            this.Qty_Txt.PlaceholderText = "ادخل كمية الصنف";
-            this.Qty_Txt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Qty_Txt.SelectedText = "";
-            this.Qty_Txt.Size = new System.Drawing.Size(200, 36);
-            this.Qty_Txt.TabIndex = 422;
-            this.Qty_Txt.TextOffset = new System.Drawing.Point(3, 0);
-            // 
-            // Note_Txt
-            // 
-            this.Note_Txt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Note_Txt.BorderRadius = 15;
-            this.Note_Txt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Note_Txt.DefaultText = "";
-            this.Note_Txt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.Note_Txt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.Note_Txt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Note_Txt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Note_Txt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Note_Txt.Font = new System.Drawing.Font("Cairo", 9F);
-            this.Note_Txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Note_Txt.IconRightOffset = new System.Drawing.Point(3, 0);
-            this.Note_Txt.Location = new System.Drawing.Point(96, 479);
-            this.Note_Txt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Note_Txt.Multiline = true;
-            this.Note_Txt.Name = "Note_Txt";
-            this.Note_Txt.PasswordChar = '\0';
-            this.Note_Txt.PlaceholderText = "عن المنتج";
-            this.Note_Txt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Note_Txt.SelectedText = "";
-            this.Note_Txt.Size = new System.Drawing.Size(451, 75);
-            this.Note_Txt.TabIndex = 424;
-            this.Note_Txt.TextOffset = new System.Drawing.Point(3, 0);
-            // 
-            // Discount_Txt
-            // 
-            this.Discount_Txt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Discount_Txt.AutoRoundedCorners = true;
-            this.Discount_Txt.BorderRadius = 17;
-            this.Discount_Txt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Discount_Txt.DefaultText = "";
-            this.Discount_Txt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.Discount_Txt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.Discount_Txt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Discount_Txt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Discount_Txt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Discount_Txt.Font = new System.Drawing.Font("Cairo", 9F);
-            this.Discount_Txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Discount_Txt.IconRight = ((System.Drawing.Image)(resources.GetObject("Discount_Txt.IconRight")));
-            this.Discount_Txt.IconRightOffset = new System.Drawing.Point(3, 0);
-            this.Discount_Txt.Location = new System.Drawing.Point(346, 335);
-            this.Discount_Txt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Discount_Txt.Name = "Discount_Txt";
-            this.Discount_Txt.PasswordChar = '\0';
-            this.Discount_Txt.PlaceholderText = "ادخل خصم المنتج";
-            this.Discount_Txt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Discount_Txt.SelectedText = "";
-            this.Discount_Txt.Size = new System.Drawing.Size(200, 36);
-            this.Discount_Txt.TabIndex = 423;
-            this.Discount_Txt.TextOffset = new System.Drawing.Point(3, 0);
-            this.Discount_Txt.TextChanged += new System.EventHandler(this.Discount_Txt_TextChanged);
-            // 
             // Username_Pic
             // 
             this.Username_Pic.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -646,124 +571,26 @@
             this.Username_Pic.ImageActive = null;
             this.Username_Pic.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Username_Pic.InitialImage = ((System.Drawing.Image)(resources.GetObject("Username_Pic.InitialImage")));
-            this.Username_Pic.Location = new System.Drawing.Point(604, 248);
+            this.Username_Pic.Location = new System.Drawing.Point(603, 248);
             this.Username_Pic.Name = "Username_Pic";
             this.Username_Pic.Shape = A7MD_Library.A2_Library.Helping.picShape.Round;
             this.Username_Pic.Size = new System.Drawing.Size(111, 111);
             this.Username_Pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Username_Pic.SquareSize = true;
-            this.Username_Pic.TabIndex = 425;
+            this.Username_Pic.TabIndex = 417;
             this.Username_Pic.TabStop = false;
             this.Username_Pic.Zoom = 10;
             this.Username_Pic.Click += new System.EventHandler(this.Browse_Btn_Click);
-            // 
-            // bunifuButton1
-            // 
-            this.bunifuButton1.AllowAnimations = true;
-            this.bunifuButton1.AllowMouseEffects = true;
-            this.bunifuButton1.AllowToggling = false;
-            this.bunifuButton1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.bunifuButton1.AnimationSpeed = 200;
-            this.bunifuButton1.AutoGenerateColors = false;
-            this.bunifuButton1.AutoRoundBorders = true;
-            this.bunifuButton1.AutoSizeLeftIcon = true;
-            this.bunifuButton1.AutoSizeRightIcon = true;
-            this.bunifuButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuButton1.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(188)))), ((int)(((byte)(152)))));
-            this.bunifuButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.BackgroundImage")));
-            this.bunifuButton1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton1.ButtonText = "";
-            this.bunifuButton1.ButtonTextMarginLeft = 0;
-            this.bunifuButton1.ColorContrastOnClick = 45;
-            this.bunifuButton1.ColorContrastOnHover = 45;
-            this.bunifuButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.bunifuButton1.CustomizableEdges = borderEdges1;
-            this.bunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.bunifuButton1.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuButton1.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.bunifuButton1.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Hover;
-            this.bunifuButton1.Font = new System.Drawing.Font("Cairo", 8.999999F);
-            this.bunifuButton1.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton1.IconLeft = null;
-            this.bunifuButton1.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuButton1.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuButton1.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.bunifuButton1.IconMarginLeft = 11;
-            this.bunifuButton1.IconPadding = 10;
-            this.bunifuButton1.IconRight = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.IconRight")));
-            this.bunifuButton1.IconRightAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuButton1.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuButton1.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 15, 3);
-            this.bunifuButton1.IconSize = 25;
-            this.bunifuButton1.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(188)))), ((int)(((byte)(152)))));
-            this.bunifuButton1.IdleBorderRadius = 33;
-            this.bunifuButton1.IdleBorderThickness = 1;
-            this.bunifuButton1.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(188)))), ((int)(((byte)(152)))));
-            this.bunifuButton1.IdleIconLeftImage = null;
-            this.bunifuButton1.IdleIconRightImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.IdleIconRightImage")));
-            this.bunifuButton1.IndicateFocus = true;
-            this.bunifuButton1.Location = new System.Drawing.Point(95, 408);
-            this.bunifuButton1.Name = "bunifuButton1";
-            this.bunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.bunifuButton1.OnDisabledState.BorderRadius = 35;
-            this.bunifuButton1.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton1.OnDisabledState.BorderThickness = 1;
-            this.bunifuButton1.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuButton1.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.bunifuButton1.OnDisabledState.IconLeftImage = null;
-            this.bunifuButton1.OnDisabledState.IconRightImage = null;
-            this.bunifuButton1.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
-            this.bunifuButton1.onHoverState.BorderRadius = 35;
-            this.bunifuButton1.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton1.onHoverState.BorderThickness = 1;
-            this.bunifuButton1.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
-            this.bunifuButton1.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton1.onHoverState.IconLeftImage = null;
-            this.bunifuButton1.onHoverState.IconRightImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.onHoverState.IconRightImage")));
-            this.bunifuButton1.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(188)))), ((int)(((byte)(152)))));
-            this.bunifuButton1.OnIdleState.BorderRadius = 35;
-            this.bunifuButton1.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton1.OnIdleState.BorderThickness = 1;
-            this.bunifuButton1.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(188)))), ((int)(((byte)(152)))));
-            this.bunifuButton1.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton1.OnIdleState.IconLeftImage = null;
-            this.bunifuButton1.OnIdleState.IconRightImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.OnIdleState.IconRightImage")));
-            this.bunifuButton1.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(166)))), ((int)(((byte)(134)))));
-            this.bunifuButton1.OnPressedState.BorderRadius = 35;
-            this.bunifuButton1.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton1.OnPressedState.BorderThickness = 1;
-            this.bunifuButton1.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(166)))), ((int)(((byte)(134)))));
-            this.bunifuButton1.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton1.OnPressedState.IconLeftImage = null;
-            this.bunifuButton1.OnPressedState.IconRightImage = null;
-            this.bunifuButton1.Size = new System.Drawing.Size(35, 35);
-            this.bunifuButton1.TabIndex = 427;
-            this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuButton1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.bunifuButton1.TextMarginLeft = 0;
-            this.bunifuButton1.TextPadding = new System.Windows.Forms.Padding(-5, 0, 5, 0);
-            this.bunifuButton1.UseDefaultRadiusAndThickness = true;
-            this.bunifuButton1.Visible = false;
             // 
             // MedicationUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.bunifuButton1);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.Barcode_Txtbox);
-            this.Controls.Add(this.Qty_Txt);
-            this.Controls.Add(this.Note_Txt);
-            this.Controls.Add(this.Discount_Txt);
-            this.Controls.Add(this.Username_Pic);
             this.Controls.Add(this.Browse_Btn);
+            this.Controls.Add(this.Username_Pic);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.guna2TextBox5);
+            this.Controls.Add(this.guna2TextBox6);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.guna2TextBox3);
@@ -806,16 +633,11 @@
             this.Controls.SetChildIndex(this.guna2TextBox3, 0);
             this.Controls.SetChildIndex(this.label9, 0);
             this.Controls.SetChildIndex(this.label11, 0);
+            this.Controls.SetChildIndex(this.guna2TextBox6, 0);
             this.Controls.SetChildIndex(this.guna2TextBox5, 0);
             this.Controls.SetChildIndex(this.label4, 0);
-            this.Controls.SetChildIndex(this.Browse_Btn, 0);
             this.Controls.SetChildIndex(this.Username_Pic, 0);
-            this.Controls.SetChildIndex(this.Discount_Txt, 0);
-            this.Controls.SetChildIndex(this.Note_Txt, 0);
-            this.Controls.SetChildIndex(this.Qty_Txt, 0);
-            this.Controls.SetChildIndex(this.Barcode_Txtbox, 0);
-            this.Controls.SetChildIndex(this.label12, 0);
-            this.Controls.SetChildIndex(this.bunifuButton1, 0);
+            this.Controls.SetChildIndex(this.Browse_Btn, 0);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Username_Pic)).EndInit();
             this.ResumeLayout(false);
@@ -834,28 +656,21 @@
         internal Guna.UI2.WinForms.Guna2ComboBox Section_ComboBox;
         private System.Windows.Forms.Label label2;
         internal Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        internal Guna.UI2.WinForms.Guna2TextBox Manager_Phone_TxtBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         internal Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label2;
-        internal Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        internal Guna.UI2.WinForms.Guna2TextBox Manager_Phone_TxtBox;
-        private System.Windows.Forms.Label label6;
         internal Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private System.Windows.Forms.Label label9;
+        internal Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
         internal Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label4;
         internal Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
+        internal Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
         private System.Windows.Forms.Label label11;
         internal Guna.UI2.WinForms.Guna2Button Browse_Btn;
-        private System.Windows.Forms.Label label12;
-        internal Guna.UI2.WinForms.Guna2TextBox Barcode_Txtbox;
-        internal Guna.UI2.WinForms.Guna2TextBox Qty_Txt;
-        internal Guna.UI2.WinForms.Guna2TextBox Note_Txt;
-        internal Guna.UI2.WinForms.Guna2TextBox Discount_Txt;
         internal A7MD_Library.Pictures.A2PictureboxPro Username_Pic;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
     }
 }
