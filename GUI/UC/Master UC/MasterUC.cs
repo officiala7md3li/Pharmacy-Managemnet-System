@@ -443,15 +443,14 @@ namespace Pharmacy_Managemnet_System.GUI.UC.Master_UC
         private void MasterUC_SizeChanged(object sender, EventArgs e)
         {
             Option_Btn.Location = new Point(Option_Btn.Location.X, this.Size.Height - 39);
-            if (this.Size.Height<= 540)
+            if (!(this.Size.Height> 540))
             {
                 New_Btn.Location = new Point(New_Btn.Location.X, Option_Btn.Top - (Option_Btn.Height / 2));
-                Save_Btn.Location = new Point(New_Btn.Location.X, Option_Btn.Top - (Option_Btn.Height / 2));
-                Delete_Btn.Location = new Point(New_Btn.Location.X, Option_Btn.Top - (Option_Btn.Height / 2));
-                Search_Btn.Location = new Point(New_Btn.Location.X, Option_Btn.Top - (Option_Btn.Height / 2));
-                Guna2Button1.Location = new Point(New_Btn.Location.X, Option_Btn.Top - (Option_Btn.Height / 2));
-                Guna2Button3.Location = new Point(New_Btn.Location.X, Option_Btn.Top - (Option_Btn.Height / 2));
-
+                Save_Btn.Location = new Point(Save_Btn.Location.X, Option_Btn.Top - (Option_Btn.Height / 2));
+                Delete_Btn.Location = new Point(Delete_Btn.Location.X, Option_Btn.Top - (Option_Btn.Height / 2));
+                Search_Btn.Location = new Point(Search_Btn.Location.X, Option_Btn.Top - (Option_Btn.Height / 2));
+                Guna2Button1.Location = new Point(Guna2Button1.Location.X, Option_Btn.Top - (Option_Btn.Height / 2));
+                Guna2Button3.Location = new Point(Guna2Button3.Location.X, Option_Btn.Top - (Option_Btn.Height / 2));
             }
         }
     }
