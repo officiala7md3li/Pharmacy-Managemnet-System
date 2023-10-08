@@ -276,15 +276,15 @@ namespace Pharmacy_Managemnet_System.GUI
         #region Proceed to Users
         private void Proceed_to_Users_Btn_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(Auth_Pass_txt.Text) || string.IsNullOrWhiteSpace(Auth_Pass_txt.Text))
-            {
-                Messages.SnackbarShow(Snackbar, this, "ادخل كلمة المرور", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 5);
-                return;
-            }
+            //if (string.IsNullOrEmpty(Auth_Pass_txt.Text) || string.IsNullOrWhiteSpace(Auth_Pass_txt.Text))
+            //{
+            //    Messages.SnackbarShow(Snackbar, this, "ادخل كلمة المرور", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 5);
+            //    return;
+            //}
             //todo: Uncomment it
 
-            if (Auth_Pass_txt.Text == CurrentUser_.Password)
-            {
+            //if (Auth_Pass_txt.Text == CurrentUser_.Password)
+            //{
                 SelectedUC(Properties.Settings.Default.PermissionNeededUC);
                 Invalidate();
                 Showing_Page_On_Screen(true, true);
@@ -292,11 +292,11 @@ namespace Pharmacy_Managemnet_System.GUI
                 Auth_Pass_txt.IconLeft = Fb_Icon.ErrorImage;
                 Auth_Pass_txt.UseSystemPasswordChar = true;
                 Auth_Pass_txt.Clear();
-            }
-            else
-            {
-                Messages.SnackbarShow(Snackbar, this, "ادخل كلمة المرور بطريقة صحيحه", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 5);
-            }
+            //}
+            //else
+            //{
+            //    Messages.SnackbarShow(Snackbar, this, "ادخل كلمة المرور بطريقة صحيحه", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 5);
+            //}
         }
 
         private void Auth_Pass_txt_IconLeftClick(object sender, EventArgs e)
@@ -338,7 +338,7 @@ namespace Pharmacy_Managemnet_System.GUI
             }
         }
         #region Choosing UC and Button
-        void SelectedUC(UserControl selectedUC)
+        public void SelectedUC(UserControl selectedUC)
         {
             try
             {
@@ -420,6 +420,76 @@ namespace Pharmacy_Managemnet_System.GUI
         private void Main_Slider_Visits_Btn_Click(object sender, EventArgs e)
         {
             SelectedUC(medicationUC1);
+        }
+
+        private void Settings_Popup_Menu_Click(object sender, EventArgs e)
+        {
+            if (CurrentUser_.Position == "مؤقت" || CurrentUser_.Position =="Admin"||  string.IsNullOrEmpty(CurrentUser_.Position))
+            {
+                Message_Lbl.Text = "من فضلك " + Auth_Pass_txt.PlaceholderText + "، " + Username_Shw_lbl.Text;
+                Auth_Pic.Image = Username_Pic.Image;
+                Properties.Settings.Default.PermissionNeededUC = settingsUC1;
+                Properties.Settings.Default.Save();
+                Showing_Page_On_Screen(false, true, "Auth_For_Account");
+                Change_Check_Popup_Menu(false);
+                HidePnlCheck();
+            }
+            else
+            {
+                Messages.SnackbarShow(Snackbar, this, "انت لاتملك الصلاحيه الكافيه للدخول لتلك الصفحه", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 5);
+                Main_Menu_Home_Btn.PerformClick();
+            }
+        }
+
+        private void Permission_Popup_Menu_Click(object sender, EventArgs e)
+        {
+            if (CurrentUser_.Position == "مؤقت" || CurrentUser_.Position == "Admin" || string.IsNullOrEmpty(CurrentUser_.Position))
+            {
+                Message_Lbl.Text = "من فضلك " + Auth_Pass_txt.PlaceholderText + "، " + Username_Shw_lbl.Text;
+                Auth_Pic.Image = Username_Pic.Image;
+                Properties.Settings.Default.PermissionNeededUC = userUC1;
+                Properties.Settings.Default.Save();
+                Showing_Page_On_Screen(false, true, "Auth_For_Account");
+                Change_Check_Popup_Menu(false);
+                HidePnlCheck();
+            }
+            else
+            {
+                Messages.SnackbarShow(Snackbar, this, "انت لاتملك الصلاحيه الكافيه للدخول لتلك الصفحه", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 5);
+                Main_Menu_Home_Btn.PerformClick();
+            }
+
+        }
+
+        private void Section_Popup_Menu_Click(object sender, EventArgs e)
+        {
+            if (CurrentUser_.Position == "مؤقت" || CurrentUser_.Position == "Admin" || string.IsNullOrEmpty(CurrentUser_.Position))
+            {
+                Message_Lbl.Text = "من فضلك " + Auth_Pass_txt.PlaceholderText + "، " + Username_Shw_lbl.Text;
+                Auth_Pic.Image = Username_Pic.Image;
+                Properties.Settings.Default.PermissionNeededUC = branchUC1;
+                Properties.Settings.Default.Save();
+                Showing_Page_On_Screen(false, true, "Auth_For_Account");
+                Change_Check_Popup_Menu(false);
+                HidePnlCheck();
+            }
+            else
+            {
+                Messages.SnackbarShow(Snackbar, this, "انت لاتملك الصلاحيه الكافيه للدخول لتلك الصفحه", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning, 5);
+                Main_Menu_Home_Btn.PerformClick();
+            }
+
+        }
+
+        private void Main_Menu_Home_Btn_Click(object sender, EventArgs e)
+        {
+            SelectedUC(welcomeUC1);
+
+        }
+
+        private void MainMenuForm_Load(object sender, EventArgs e)
+        {
+            SelectedUC(welcomeUC1);
         }
     }
 }

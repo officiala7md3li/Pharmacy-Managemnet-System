@@ -7,13 +7,12 @@ using System.Threading.Tasks;
 
 namespace Pharmacy_Managemnet_System.Model
 {
-    public class DrugConcentrationPrice
+    public class MedicationExpiryDate
     {
         public int Id { get; set; }
-        public string  DoseConcentration { get; set; }
         public decimal Price { get; set; }
         [ForeignKey("Medication")]
         public int MedicationID { get; set; }
-        public Medication Medication { get; set; }
+        public DateTime Expirydate { get; set; }
     }
 }

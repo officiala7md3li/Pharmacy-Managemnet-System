@@ -13,7 +13,7 @@ namespace Pharmacy_Managemnet_System.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202310071355548_ITI-Pharmacy"; }
+            get { return "202310081512325_ITI-Pharmacy"; }
         }
         
         string IMigrationMetadata.Source

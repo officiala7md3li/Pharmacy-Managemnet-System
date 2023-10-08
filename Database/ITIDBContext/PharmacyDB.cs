@@ -29,6 +29,7 @@ namespace Pharmacy_Managemnet_System
         public DbSet<InvoiceDetails> InvoiceDetails { get; set; }
         public DbSet<InvoiceHeader> InvoiceHeader {  get; set; }
         public DbSet<DrugConcentrationPrice> DrugConcentrationPrice { get; set; }
+        //public DbSet<MedicationExpiryDate> MedicationExpiryDate { get; set;}
         public DbSet<Medication> Medication { get; set; }
         public DbSet<Patient> Patient { get; set; }
         public DbSet<PatientPayment> PatientPayment { get; set; }

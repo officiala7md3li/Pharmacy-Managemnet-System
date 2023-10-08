@@ -25,5 +25,15 @@ namespace Pharmacy_Managemnet_System.GUI.UC
                 mainMenuForm.Refresh();
 
         }
+
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Discount_Txt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

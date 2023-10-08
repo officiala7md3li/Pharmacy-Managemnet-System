@@ -22,9 +22,7 @@ namespace Pharmacy_Managemnet_System.Model
         public string Dose { get; set; }
         public decimal BuyPrice { get; set; }
         public decimal SalePrice { get; set; }
-        [ForeignKey("drugConcentrationPrice")]
-        public int UnitPriceID { get; set; }
-        public DrugConcentrationPrice drugConcentrationPrice { get; set; }
+        public List<DrugConcentrationPrice> drugConcentrationPrices { get; set; }
         public decimal Discount { get; set; }
         public int Quantity { get; set; }
         public string Barcode { get; set; }

@@ -133,7 +133,7 @@
             this.ID_TxtBox.TextOffset = new System.Drawing.Point(3, 0);
             this.ID_TxtBox.Visible = false;
             // 
-            // DoctorSpecialization
+            // DoctorSpecializationUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.Controls.Add(this.PictureBox2);
@@ -141,7 +141,7 @@
             this.Controls.Add(this.Department_Name_TxtBox);
             this.Controls.Add(this.Label1);
             this.Controls.Add(this.ID_TxtBox);
-            this.Name = "DoctorSpecialization";
+            this.Name = "DoctorSpecializationUC";
             this.Controls.SetChildIndex(this.ID_TxtBox, 0);
             this.Controls.SetChildIndex(this.Label1, 0);
             this.Controls.SetChildIndex(this.Department_Name_TxtBox, 0);

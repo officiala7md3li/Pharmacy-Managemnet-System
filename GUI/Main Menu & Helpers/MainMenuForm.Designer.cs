@@ -65,10 +65,18 @@
             this.Logout_Popup_Menu = new Guna.UI2.WinForms.Guna2TileButton();
             this.BunifuPages2 = new Bunifu.UI.WinForms.BunifuPages();
             this.Panel2 = new System.Windows.Forms.Panel();
+            this.welcomeUC1 = new Pharmacy_Managemnet_System.GUI.UC.WelcomeUC();
+            this.userUC1 = new Pharmacy_Managemnet_System.GUI.UC.UserUC();
+            this.supplierUC1 = new Pharmacy_Managemnet_System.GUI.UC.SupplierUC();
+            this.supplierPayment1 = new Pharmacy_Managemnet_System.GUI.UC.SupplierPayment();
+            this.patientUC1 = new Pharmacy_Managemnet_System.GUI.UC.PatientUC();
+            this.patientPaymentUC1 = new Pharmacy_Managemnet_System.GUI.UC.PatientPaymentUC();
+            this.medicationUC1 = new Pharmacy_Managemnet_System.GUI.UC.MedicationUC();
             this.doctorSpecialization1 = new Pharmacy_Managemnet_System.GUI.UC.DoctorSpecializationUC();
             this.doctorUC1 = new Pharmacy_Managemnet_System.GUI.UC.DoctorUC();
             this.companyUC1 = new Pharmacy_Managemnet_System.GUI.UC.CompanyUC();
             this.branchUC1 = new Pharmacy_Managemnet_System.GUI.UC.Branch.BranchUC();
+            this.settingsUC1 = new Pharmacy_Managemnet_System.GUI.UC.User.SettingsUC();
             this.Form_Dock = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.Popup_Menu_TMR = new System.Windows.Forms.Timer(this.components);
             this.Support_pnl = new Guna.UI2.WinForms.Guna2Panel();
@@ -87,6 +95,9 @@
             this.Guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.A2SGradSlider1 = new A7MD_Library.Panels.A2SGradSlider();
             this.Menu_Icon = new A7MD_Library.Pictures.AImageButton();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.Main_Slider_Visits_Btn = new Guna.UI2.WinForms.Guna2Button();
             this.Main_Slider_Payments_Btn = new Guna.UI2.WinForms.Guna2Button();
             this.Main_Menu_Home_Btn = new Guna.UI2.WinForms.Guna2Button();
@@ -99,7 +110,6 @@
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.FormDock = new Bunifu.UI.WinForms.BunifuFormDock();
             this.bunifuFormResizer1 = new Bunifu.UI.WinForms.BunifuFormResizer(this.components);
-            this.medicationUC1 = new Pharmacy_Managemnet_System.GUI.UC.MedicationUC();
             this.TabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Auth_Pic)).BeginInit();
             this.TabPage4.SuspendLayout();
@@ -636,6 +646,7 @@
             this.Permission_Popup_Menu.TabIndex = 1;
             this.Permission_Popup_Menu.Text = "الصلاحيات";
             this.Permission_Popup_Menu.UseTransparentBackground = true;
+            this.Permission_Popup_Menu.Click += new System.EventHandler(this.Permission_Popup_Menu_Click);
             this.Permission_Popup_Menu.MouseEnter += new System.EventHandler(this.All_Button_in_Popup_Menu_Popup_Menu_MouseHover);
             this.Permission_Popup_Menu.MouseLeave += new System.EventHandler(this.All_Button_in_Popup_Menu_MouseLeave);
             this.Permission_Popup_Menu.MouseHover += new System.EventHandler(this.All_Button_in_Popup_Menu_Popup_Menu_MouseHover);
@@ -658,6 +669,7 @@
             this.Section_Popup_Menu.TabIndex = 2;
             this.Section_Popup_Menu.Text = "الفروع";
             this.Section_Popup_Menu.UseTransparentBackground = true;
+            this.Section_Popup_Menu.Click += new System.EventHandler(this.Section_Popup_Menu_Click);
             this.Section_Popup_Menu.MouseEnter += new System.EventHandler(this.All_Button_in_Popup_Menu_Popup_Menu_MouseHover);
             this.Section_Popup_Menu.MouseLeave += new System.EventHandler(this.All_Button_in_Popup_Menu_MouseLeave);
             this.Section_Popup_Menu.MouseHover += new System.EventHandler(this.All_Button_in_Popup_Menu_Popup_Menu_MouseHover);
@@ -680,6 +692,7 @@
             this.Settings_Popup_Menu.TabIndex = 3;
             this.Settings_Popup_Menu.Text = "الاعدادات";
             this.Settings_Popup_Menu.UseTransparentBackground = true;
+            this.Settings_Popup_Menu.Click += new System.EventHandler(this.Settings_Popup_Menu_Click);
             this.Settings_Popup_Menu.MouseEnter += new System.EventHandler(this.All_Button_in_Popup_Menu_Popup_Menu_MouseHover);
             this.Settings_Popup_Menu.MouseLeave += new System.EventHandler(this.All_Button_in_Popup_Menu_MouseLeave);
             this.Settings_Popup_Menu.MouseHover += new System.EventHandler(this.All_Button_in_Popup_Menu_Popup_Menu_MouseHover);
@@ -762,6 +775,7 @@
             this.Logout_Popup_Menu.TabIndex = 4;
             this.Logout_Popup_Menu.Text = "تسجيل خروج";
             this.Logout_Popup_Menu.UseTransparentBackground = true;
+            this.Logout_Popup_Menu.Click += new System.EventHandler(this.Logout_Btn_Click);
             this.Logout_Popup_Menu.MouseEnter += new System.EventHandler(this.All_Button_in_Popup_Menu_Popup_Menu_MouseHover);
             this.Logout_Popup_Menu.MouseLeave += new System.EventHandler(this.All_Button_in_Popup_Menu_MouseLeave);
             this.Logout_Popup_Menu.MouseHover += new System.EventHandler(this.All_Button_in_Popup_Menu_Popup_Menu_MouseHover);
@@ -780,10 +794,10 @@
             this.BunifuPages2.Margin = new System.Windows.Forms.Padding(4);
             this.BunifuPages2.Multiline = true;
             this.BunifuPages2.Name = "BunifuPages2";
-            this.BunifuPages2.Page = this.TabPage1;
-            this.BunifuPages2.PageIndex = 1;
-            this.BunifuPages2.PageName = "TabPage1";
-            this.BunifuPages2.PageTitle = "Auth_For_Account";
+            this.BunifuPages2.Page = this.TabPage4;
+            this.BunifuPages2.PageIndex = 0;
+            this.BunifuPages2.PageName = "TabPage4";
+            this.BunifuPages2.PageTitle = "Exit Page";
             this.BunifuPages2.SelectedIndex = 0;
             this.BunifuPages2.Size = new System.Drawing.Size(1026, 650);
             this.BunifuPages2.TabIndex = 252;
@@ -808,16 +822,170 @@
             // 
             // Panel2
             // 
+            this.Panel2.Controls.Add(this.welcomeUC1);
+            this.Panel2.Controls.Add(this.userUC1);
+            this.Panel2.Controls.Add(this.supplierUC1);
+            this.Panel2.Controls.Add(this.supplierPayment1);
+            this.Panel2.Controls.Add(this.patientUC1);
+            this.Panel2.Controls.Add(this.patientPaymentUC1);
             this.Panel2.Controls.Add(this.medicationUC1);
             this.Panel2.Controls.Add(this.doctorSpecialization1);
             this.Panel2.Controls.Add(this.doctorUC1);
             this.Panel2.Controls.Add(this.companyUC1);
             this.Panel2.Controls.Add(this.branchUC1);
+            this.Panel2.Controls.Add(this.settingsUC1);
             this.Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel2.Location = new System.Drawing.Point(3, 100);
             this.Panel2.Name = "Panel2";
             this.Panel2.Size = new System.Drawing.Size(820, 546);
             this.Panel2.TabIndex = 249;
+            // 
+            // welcomeUC1
+            // 
+            this.welcomeUC1.Enabled = false;
+            this.welcomeUC1.Location = new System.Drawing.Point(5, 39);
+            this.welcomeUC1.Name = "welcomeUC1";
+            this.welcomeUC1.Size = new System.Drawing.Size(810, 468);
+            this.welcomeUC1.TabIndex = 10;
+            this.welcomeUC1.Visible = false;
+            // 
+            // userUC1
+            // 
+            this.userUC1.DeleteBtnVisible = false;
+            this.userUC1.EditBtnVisible = false;
+            this.userUC1.EditDataCheck = false;
+            this.userUC1.Enabled = false;
+            this.userUC1.FileFromDatabaseProperty = false;
+            this.userUC1.FileNameProperty = null;
+            this.userUC1.FileNumFromDBProperty = null;
+            this.userUC1.FileUploadedProperty = false;
+            this.userUC1.Location = new System.Drawing.Point(6, 39);
+            this.userUC1.MasterUCLock = true;
+            this.userUC1.MemoStream = null;
+            this.userUC1.Name = "userUC1";
+            this.userUC1.NewBtnVisible = true;
+            this.userUC1.PrintBtnVisible = false;
+            this.userUC1.ReceivedByteProperty = null;
+            this.userUC1.SaveBtnVisible = false;
+            this.userUC1.SearchBtnVisible = false;
+            this.userUC1.Size = new System.Drawing.Size(810, 540);
+            this.userUC1.TabIndex = 9;
+            this.userUC1.Visible = false;
+            // 
+            // supplierUC1
+            // 
+            this.supplierUC1.DeleteBtnVisible = false;
+            this.supplierUC1.EditBtnVisible = false;
+            this.supplierUC1.EditDataCheck = false;
+            this.supplierUC1.Enabled = false;
+            this.supplierUC1.FileFromDatabaseProperty = false;
+            this.supplierUC1.FileNameProperty = null;
+            this.supplierUC1.FileNumFromDBProperty = null;
+            this.supplierUC1.FileUploadedProperty = false;
+            this.supplierUC1.Location = new System.Drawing.Point(5, 39);
+            this.supplierUC1.MasterUCLock = true;
+            this.supplierUC1.MemoStream = null;
+            this.supplierUC1.Name = "supplierUC1";
+            this.supplierUC1.NewBtnVisible = true;
+            this.supplierUC1.PrintBtnVisible = false;
+            this.supplierUC1.ReceivedByteProperty = null;
+            this.supplierUC1.SaveBtnVisible = false;
+            this.supplierUC1.SearchBtnVisible = false;
+            this.supplierUC1.Size = new System.Drawing.Size(810, 468);
+            this.supplierUC1.TabIndex = 8;
+            this.supplierUC1.Visible = false;
+            // 
+            // supplierPayment1
+            // 
+            this.supplierPayment1.DeleteBtnVisible = false;
+            this.supplierPayment1.EditBtnVisible = false;
+            this.supplierPayment1.EditDataCheck = false;
+            this.supplierPayment1.Enabled = false;
+            this.supplierPayment1.FileFromDatabaseProperty = false;
+            this.supplierPayment1.FileNameProperty = null;
+            this.supplierPayment1.FileNumFromDBProperty = null;
+            this.supplierPayment1.FileUploadedProperty = false;
+            this.supplierPayment1.Location = new System.Drawing.Point(5, 39);
+            this.supplierPayment1.MasterUCLock = true;
+            this.supplierPayment1.MemoStream = null;
+            this.supplierPayment1.Name = "supplierPayment1";
+            this.supplierPayment1.NewBtnVisible = true;
+            this.supplierPayment1.PrintBtnVisible = false;
+            this.supplierPayment1.ReceivedByteProperty = null;
+            this.supplierPayment1.SaveBtnVisible = false;
+            this.supplierPayment1.SearchBtnVisible = false;
+            this.supplierPayment1.Size = new System.Drawing.Size(810, 468);
+            this.supplierPayment1.TabIndex = 7;
+            this.supplierPayment1.Visible = false;
+            // 
+            // patientUC1
+            // 
+            this.patientUC1.DeleteBtnVisible = false;
+            this.patientUC1.EditBtnVisible = false;
+            this.patientUC1.EditDataCheck = false;
+            this.patientUC1.Enabled = false;
+            this.patientUC1.FileFromDatabaseProperty = false;
+            this.patientUC1.FileNameProperty = null;
+            this.patientUC1.FileNumFromDBProperty = null;
+            this.patientUC1.FileUploadedProperty = false;
+            this.patientUC1.Location = new System.Drawing.Point(5, 39);
+            this.patientUC1.MasterUCLock = true;
+            this.patientUC1.MemoStream = null;
+            this.patientUC1.Name = "patientUC1";
+            this.patientUC1.NewBtnVisible = true;
+            this.patientUC1.PrintBtnVisible = false;
+            this.patientUC1.ReceivedByteProperty = null;
+            this.patientUC1.SaveBtnVisible = false;
+            this.patientUC1.SearchBtnVisible = false;
+            this.patientUC1.Size = new System.Drawing.Size(810, 468);
+            this.patientUC1.TabIndex = 6;
+            this.patientUC1.Visible = false;
+            // 
+            // patientPaymentUC1
+            // 
+            this.patientPaymentUC1.DeleteBtnVisible = false;
+            this.patientPaymentUC1.EditBtnVisible = false;
+            this.patientPaymentUC1.EditDataCheck = false;
+            this.patientPaymentUC1.Enabled = false;
+            this.patientPaymentUC1.FileFromDatabaseProperty = false;
+            this.patientPaymentUC1.FileNameProperty = null;
+            this.patientPaymentUC1.FileNumFromDBProperty = null;
+            this.patientPaymentUC1.FileUploadedProperty = false;
+            this.patientPaymentUC1.Location = new System.Drawing.Point(5, 39);
+            this.patientPaymentUC1.MasterUCLock = true;
+            this.patientPaymentUC1.MemoStream = null;
+            this.patientPaymentUC1.Name = "patientPaymentUC1";
+            this.patientPaymentUC1.NewBtnVisible = true;
+            this.patientPaymentUC1.PrintBtnVisible = false;
+            this.patientPaymentUC1.ReceivedByteProperty = null;
+            this.patientPaymentUC1.SaveBtnVisible = false;
+            this.patientPaymentUC1.SearchBtnVisible = false;
+            this.patientPaymentUC1.Size = new System.Drawing.Size(810, 468);
+            this.patientPaymentUC1.TabIndex = 5;
+            this.patientPaymentUC1.Visible = false;
+            // 
+            // medicationUC1
+            // 
+            this.medicationUC1.DeleteBtnVisible = true;
+            this.medicationUC1.EditBtnVisible = true;
+            this.medicationUC1.EditDataCheck = true;
+            this.medicationUC1.Enabled = false;
+            this.medicationUC1.FileFromDatabaseProperty = false;
+            this.medicationUC1.FileNameProperty = null;
+            this.medicationUC1.FileNumFromDBProperty = null;
+            this.medicationUC1.FileUploadedProperty = false;
+            this.medicationUC1.Location = new System.Drawing.Point(9, 37);
+            this.medicationUC1.MasterUCLock = false;
+            this.medicationUC1.MemoStream = null;
+            this.medicationUC1.Name = "medicationUC1";
+            this.medicationUC1.NewBtnVisible = false;
+            this.medicationUC1.PrintBtnVisible = true;
+            this.medicationUC1.ReceivedByteProperty = null;
+            this.medicationUC1.SaveBtnVisible = true;
+            this.medicationUC1.SearchBtnVisible = true;
+            this.medicationUC1.Size = new System.Drawing.Size(810, 540);
+            this.medicationUC1.TabIndex = 4;
+            this.medicationUC1.Visible = false;
             // 
             // doctorSpecialization1
             // 
@@ -829,7 +997,7 @@
             this.doctorSpecialization1.FileNameProperty = null;
             this.doctorSpecialization1.FileNumFromDBProperty = null;
             this.doctorSpecialization1.FileUploadedProperty = false;
-            this.doctorSpecialization1.Location = new System.Drawing.Point(75, 145);
+            this.doctorSpecialization1.Location = new System.Drawing.Point(5, 39);
             this.doctorSpecialization1.MasterUCLock = true;
             this.doctorSpecialization1.MemoStream = null;
             this.doctorSpecialization1.Name = "doctorSpecialization1";
@@ -852,7 +1020,7 @@
             this.doctorUC1.FileNameProperty = null;
             this.doctorUC1.FileNumFromDBProperty = null;
             this.doctorUC1.FileUploadedProperty = false;
-            this.doctorUC1.Location = new System.Drawing.Point(75, 145);
+            this.doctorUC1.Location = new System.Drawing.Point(5, 39);
             this.doctorUC1.MasterUCLock = true;
             this.doctorUC1.MemoStream = null;
             this.doctorUC1.Name = "doctorUC1";
@@ -875,7 +1043,7 @@
             this.companyUC1.FileNameProperty = null;
             this.companyUC1.FileNumFromDBProperty = null;
             this.companyUC1.FileUploadedProperty = false;
-            this.companyUC1.Location = new System.Drawing.Point(75, 145);
+            this.companyUC1.Location = new System.Drawing.Point(5, 39);
             this.companyUC1.MasterUCLock = true;
             this.companyUC1.MemoStream = null;
             this.companyUC1.Name = "companyUC1";
@@ -898,7 +1066,7 @@
             this.branchUC1.FileNameProperty = null;
             this.branchUC1.FileNumFromDBProperty = null;
             this.branchUC1.FileUploadedProperty = false;
-            this.branchUC1.Location = new System.Drawing.Point(75, 145);
+            this.branchUC1.Location = new System.Drawing.Point(5, 39);
             this.branchUC1.MasterUCLock = true;
             this.branchUC1.MemoStream = null;
             this.branchUC1.Name = "branchUC1";
@@ -910,6 +1078,16 @@
             this.branchUC1.Size = new System.Drawing.Size(810, 468);
             this.branchUC1.TabIndex = 0;
             this.branchUC1.Visible = false;
+            // 
+            // settingsUC1
+            // 
+            this.settingsUC1.Enabled = false;
+            this.settingsUC1.Location = new System.Drawing.Point(140, 140);
+            this.settingsUC1.Master_UC_Lock = false;
+            this.settingsUC1.Name = "settingsUC1";
+            this.settingsUC1.Size = new System.Drawing.Size(810, 468);
+            this.settingsUC1.TabIndex = 11;
+            this.settingsUC1.Visible = false;
             // 
             // Form_Dock
             // 
@@ -1214,6 +1392,9 @@
             this.A2SGradSlider1.BottomRight = System.Drawing.Color.White;
             this.A2SGradSlider1.CollapseControl = this.Menu_Icon;
             this.A2SGradSlider1.Collapsed = false;
+            this.A2SGradSlider1.Controls.Add(this.guna2Button1);
+            this.A2SGradSlider1.Controls.Add(this.guna2Button2);
+            this.A2SGradSlider1.Controls.Add(this.guna2Button3);
             this.A2SGradSlider1.Controls.Add(this.Main_Slider_Visits_Btn);
             this.A2SGradSlider1.Controls.Add(this.Main_Slider_Payments_Btn);
             this.A2SGradSlider1.Controls.Add(this.Main_Menu_Home_Btn);
@@ -1253,6 +1434,83 @@
             this.Menu_Icon.Zoom = 15;
             this.Menu_Icon.Click += new System.EventHandler(this.Menu_Icon_Click);
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2Button1.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(188)))), ((int)(((byte)(152)))));
+            this.guna2Button1.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
+            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Cairo", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
+            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
+            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button1.ImageSize = new System.Drawing.Size(25, 25);
+            this.guna2Button1.Location = new System.Drawing.Point(0, 395);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.guna2Button1.PressedDepth = 10;
+            this.guna2Button1.Size = new System.Drawing.Size(197, 42);
+            this.guna2Button1.TabIndex = 80;
+            this.guna2Button1.Text = "الزيارة والفاتورة";
+            this.guna2Button1.TextOffset = new System.Drawing.Point(-12, 0);
+            this.guna2Button1.UseTransparentBackground = true;
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2Button2.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(188)))), ((int)(((byte)(152)))));
+            this.guna2Button2.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
+            this.guna2Button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.Font = new System.Drawing.Font("Cairo", 9.749999F, System.Drawing.FontStyle.Bold);
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
+            this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
+            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button2.ImageSize = new System.Drawing.Size(25, 25);
+            this.guna2Button2.Location = new System.Drawing.Point(0, 350);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.guna2Button2.PressedDepth = 10;
+            this.guna2Button2.Size = new System.Drawing.Size(197, 42);
+            this.guna2Button2.TabIndex = 79;
+            this.guna2Button2.Text = "المدفوعات";
+            this.guna2Button2.UseTransparentBackground = true;
+            // 
+            // guna2Button3
+            // 
+            this.guna2Button3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.guna2Button3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button3.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button3.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2Button3.Checked = true;
+            this.guna2Button3.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button3.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(188)))), ((int)(((byte)(152)))));
+            this.guna2Button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Button3.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button3.Font = new System.Drawing.Font("Cairo", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button3.ForeColor = System.Drawing.Color.White;
+            this.guna2Button3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
+            this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button3.Location = new System.Drawing.Point(0, 305);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.guna2Button3.PressedDepth = 10;
+            this.guna2Button3.Size = new System.Drawing.Size(197, 42);
+            this.guna2Button3.TabIndex = 78;
+            this.guna2Button3.Text = "الرئيسية";
+            this.guna2Button3.UseTransparentBackground = true;
+            // 
             // Main_Slider_Visits_Btn
             // 
             this.Main_Slider_Visits_Btn.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -1261,7 +1519,7 @@
             this.Main_Slider_Visits_Btn.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.Main_Slider_Visits_Btn.CheckedState.FillColor = System.Drawing.Color.Transparent;
             this.Main_Slider_Visits_Btn.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(188)))), ((int)(((byte)(152)))));
-            this.Main_Slider_Visits_Btn.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
+            this.Main_Slider_Visits_Btn.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image9")));
             this.Main_Slider_Visits_Btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Main_Slider_Visits_Btn.FillColor = System.Drawing.Color.Transparent;
             this.Main_Slider_Visits_Btn.Font = new System.Drawing.Font("Cairo", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1270,7 +1528,7 @@
             this.Main_Slider_Visits_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Main_Slider_Visits_Btn.Image")));
             this.Main_Slider_Visits_Btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Main_Slider_Visits_Btn.ImageSize = new System.Drawing.Size(25, 25);
-            this.Main_Slider_Visits_Btn.Location = new System.Drawing.Point(0, 349);
+            this.Main_Slider_Visits_Btn.Location = new System.Drawing.Point(0, 260);
             this.Main_Slider_Visits_Btn.Name = "Main_Slider_Visits_Btn";
             this.Main_Slider_Visits_Btn.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.Main_Slider_Visits_Btn.PressedDepth = 10;
@@ -1289,7 +1547,7 @@
             this.Main_Slider_Payments_Btn.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.Main_Slider_Payments_Btn.CheckedState.FillColor = System.Drawing.Color.Transparent;
             this.Main_Slider_Payments_Btn.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(188)))), ((int)(((byte)(152)))));
-            this.Main_Slider_Payments_Btn.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
+            this.Main_Slider_Payments_Btn.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image10")));
             this.Main_Slider_Payments_Btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Main_Slider_Payments_Btn.FillColor = System.Drawing.Color.Transparent;
             this.Main_Slider_Payments_Btn.Font = new System.Drawing.Font("Cairo", 9.749999F, System.Drawing.FontStyle.Bold);
@@ -1298,7 +1556,7 @@
             this.Main_Slider_Payments_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Main_Slider_Payments_Btn.Image")));
             this.Main_Slider_Payments_Btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Main_Slider_Payments_Btn.ImageSize = new System.Drawing.Size(25, 25);
-            this.Main_Slider_Payments_Btn.Location = new System.Drawing.Point(0, 304);
+            this.Main_Slider_Payments_Btn.Location = new System.Drawing.Point(0, 215);
             this.Main_Slider_Payments_Btn.Name = "Main_Slider_Payments_Btn";
             this.Main_Slider_Payments_Btn.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.Main_Slider_Payments_Btn.PressedDepth = 10;
@@ -1323,7 +1581,7 @@
             this.Main_Menu_Home_Btn.ForeColor = System.Drawing.Color.White;
             this.Main_Menu_Home_Btn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.Main_Menu_Home_Btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Main_Menu_Home_Btn.Location = new System.Drawing.Point(0, 259);
+            this.Main_Menu_Home_Btn.Location = new System.Drawing.Point(0, 170);
             this.Main_Menu_Home_Btn.Name = "Main_Menu_Home_Btn";
             this.Main_Menu_Home_Btn.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.Main_Menu_Home_Btn.PressedDepth = 10;
@@ -1331,13 +1589,14 @@
             this.Main_Menu_Home_Btn.TabIndex = 75;
             this.Main_Menu_Home_Btn.Text = "الرئيسية";
             this.Main_Menu_Home_Btn.UseTransparentBackground = true;
+            this.Main_Menu_Home_Btn.Click += new System.EventHandler(this.Main_Menu_Home_Btn_Click);
             // 
             // SidePanel
             // 
             this.SidePanel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(188)))), ((int)(((byte)(152)))));
             this.SidePanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(188)))), ((int)(((byte)(152)))));
-            this.SidePanel.Location = new System.Drawing.Point(194, 259);
+            this.SidePanel.Location = new System.Drawing.Point(194, 170);
             this.SidePanel.Name = "SidePanel";
             this.SidePanel.Size = new System.Drawing.Size(5, 42);
             this.SidePanel.TabIndex = 71;
@@ -1452,27 +1711,6 @@
             this.bunifuFormResizer1.ParentForm = this;
             this.bunifuFormResizer1.ResizeHandlesWidth = 6;
             // 
-            // medicationUC1
-            // 
-            this.medicationUC1.DeleteBtnVisible = true;
-            this.medicationUC1.EditBtnVisible = true;
-            this.medicationUC1.EditDataCheck = true;
-            this.medicationUC1.FileFromDatabaseProperty = false;
-            this.medicationUC1.FileNameProperty = null;
-            this.medicationUC1.FileNumFromDBProperty = null;
-            this.medicationUC1.FileUploadedProperty = false;
-            this.medicationUC1.Location = new System.Drawing.Point(44, 81);
-            this.medicationUC1.MasterUCLock = false;
-            this.medicationUC1.MemoStream = null;
-            this.medicationUC1.Name = "medicationUC1";
-            this.medicationUC1.NewBtnVisible = false;
-            this.medicationUC1.PrintBtnVisible = true;
-            this.medicationUC1.ReceivedByteProperty = null;
-            this.medicationUC1.SaveBtnVisible = true;
-            this.medicationUC1.SearchBtnVisible = true;
-            this.medicationUC1.Size = new System.Drawing.Size(810, 540);
-            this.medicationUC1.TabIndex = 4;
-            // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1489,6 +1727,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.Text = "MainMenuForm";
+            this.Load += new System.EventHandler(this.MainMenuForm_Load);
             this.TabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Auth_Pic)).EndInit();
             this.TabPage4.ResumeLayout(false);
@@ -1580,10 +1819,20 @@
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
         internal Bunifu.UI.WinForms.BunifuFormDock FormDock;
         private Bunifu.UI.WinForms.BunifuFormResizer bunifuFormResizer1;
-        private UC.CompanyUC companyUC1;
-        private UC.Branch.BranchUC branchUC1;
-        private UC.DoctorUC doctorUC1;
-        private UC.DoctorSpecializationUC doctorSpecialization1;
-        private UC.MedicationUC medicationUC1;
+        protected internal UC.WelcomeUC welcomeUC1;
+        protected internal UC.UserUC userUC1;
+        protected internal UC.SupplierUC supplierUC1;
+        protected internal UC.SupplierPayment supplierPayment1;
+        protected internal UC.PatientUC patientUC1;
+        protected internal UC.PatientPaymentUC patientPaymentUC1;
+        protected internal UC.CompanyUC companyUC1;
+        protected internal UC.Branch.BranchUC branchUC1;
+        protected internal UC.DoctorUC doctorUC1;
+        protected internal UC.DoctorSpecializationUC doctorSpecialization1;
+        protected internal UC.MedicationUC medicationUC1;
+        private UC.User.SettingsUC settingsUC1;
+        internal Guna.UI2.WinForms.Guna2Button guna2Button1;
+        internal Guna.UI2.WinForms.Guna2Button guna2Button2;
+        internal Guna.UI2.WinForms.Guna2Button guna2Button3;
     }
 }
