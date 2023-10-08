@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Pharmacy_Managemnet_System.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Image_Capture" Roaming="true" Type="A7MD_Library.Pictures.A2PictureboxPro" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="BG_Color" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">White</Value>
+    </Setting>
+    <Setting Name="Current_UC" Type="System.Windows.Forms.UserControl" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PermissionNeededUC" Type="System.Windows.Forms.UserControl" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="EnableUC" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

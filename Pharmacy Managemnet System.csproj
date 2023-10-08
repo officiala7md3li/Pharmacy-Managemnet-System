@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE7B6B55-505E-440D-936B-704BAD11C1BB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Pharmacy_Managemnet_System</RootNamespace>
+    <AssemblyName>Pharmacy Managemnet System</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="A7MD Library">
+      <HintPath>..\..\..\Flash drive\Beauty Clinic System\bin\Debug\A7MD Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.Charts.WinForms, Version=1.1.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Bunifu.Charts.WinForms.1.1.5\lib\net40\Bunifu.Charts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.Dataviz.WinForms, Version=2.2.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>packages\Bunifu.Dataviz.WinForms.2.2.1\lib\Bunifu.Dataviz.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
+      <HintPath>packages\Bunifu.Charts.WinForms.1.1.5\lib\net40\Bunifu.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>packages\Bunifu.UI.WinForms.6.0.1\lib\net40\Bunifu.UI.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.5\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ITIDBContext\PharmacyDB.cs" />
+    <Compile Include="GUI\Login\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Login\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Main Menu &amp; Helpers\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Main Menu &amp; Helpers\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Main Menu &amp; Helpers\Helping Program\CMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Main Menu &amp; Helpers\Helping Program\CMessageBox.Designer.cs">
+      <DependentUpon>CMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Main Menu &amp; Helpers\Helping Program\WaitLoaderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Main Menu &amp; Helpers\Helping Program\WaitLoaderForm.Designer.cs">
+      <DependentUpon>WaitLoaderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Main Menu &amp; Helpers\MainMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Main Menu &amp; Helpers\MainMenuForm.Designer.cs">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UC\Branch\BranchUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UC\Branch\BranchUC.Designer.cs">
+      <DependentUpon>BranchUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UC\Company\CompanyUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UC\Company\CompanyUC.Designer.cs">
+      <DependentUpon>CompanyUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UC\Doctor\DoctorSpecializationUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UC\Doctor\DoctorSpecializationUC.Designer.cs">
+      <DependentUpon>DoctorSpecializationUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UC\Doctor\DoctorUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UC\Doctor\DoctorUC.Designer.cs">
+      <DependentUpon>DoctorUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UC\Master UC\MasterUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UC\Master UC\MasterUC.Designer.cs">
+      <DependentUpon>MasterUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UC\MedicationUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UC\MedicationUC.Designer.cs">
+      <DependentUpon>MedicationUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\Messages_Show.cs" />
+    <Compile Include="Migrations\202310071355548_ITI-Pharmacy.cs" />
+    <Compile Include="Migrations\202310071355548_ITI-Pharmacy.designer.cs">
+      <DependentUpon>202310071355548_ITI-Pharmacy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\Branch\Branch.cs" />
+    <Compile Include="Model\Branch\BranchRepo.cs" />
+    <Compile Include="Model\Company\Company.cs" />
+    <Compile Include="Model\Company\CompnayRepo.cs" />
+    <Compile Include="Model\Doctor\Doctor.cs" />
+    <Compile Include="Model\Doctor\DoctorRepo.cs" />
+    <Compile Include="Model\Doctor\DoctorSpecialization.cs" />
+    <Compile Include="Model\Doctor\DoctorSpecializationRepo.cs" />
+    <Compile Include="Model\Interfaces\IPayment.cs" />
+    <Compile Include="Model\Interfaces\IPerson.cs" />
+    <Compile Include="Model\Interfaces\IRepo.cs" />
+    <Compile Include="Model\Invoice\InvoiceDetails.cs" />
+    <Compile Include="Model\Invoice\InvoiceDetailsRepo.cs" />
+    <Compile Include="Model\Invoice\InvoiceHeader.cs" />
+    <Compile Include="Model\Invoice\InvoiceHeaderRepo.cs" />
+    <Compile Include="Model\Medication\DrugConcentrationPrice.cs" />
+    <Compile Include="Model\Medication\DrugConcentrationPriceRepo.cs" />
+    <Compile Include="Model\Medication\Medication.cs" />
+    <Compile Include="Model\Medication\MedicationRepo.cs" />
+    <Compile Include="Model\Patient\Patient.cs" />
+    <Compile Include="Model\Patient\PatientPayment.cs" />
+    <Compile Include="Model\Patient\PatientPaymentRepo.cs" />
+    <Compile Include="Model\Patient\PatientRepo.cs" />
+    <Compile Include="Model\Prescription\Prescription.cs" />
+    <Compile Include="Model\Prescription\PrescriptionRepo.cs" />
+    <Compile Include="Model\Supplier\Supplier.cs" />
+    <Compile Include="Model\Supplier\SupplierPayment.cs" />
+    <Compile Include="Model\Supplier\SupplierPaymentRepo.cs" />
+    <Compile Include="Model\Supplier\SupplierRepo.cs" />
+    <Compile Include="Model\Users\User.cs" />
+    <Compile Include="Model\Users\UsersRepo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Login\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Main Menu &amp; Helpers\Helping Program\CMessageBox.resx">
+      <DependentUpon>CMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Main Menu &amp; Helpers\Helping Program\WaitLoaderForm.resx">
+      <DependentUpon>WaitLoaderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Main Menu &amp; Helpers\MainMenuForm.resx">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UC\Branch\BranchUC.resx">
+      <DependentUpon>BranchUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UC\Company\CompanyUC.resx">
+      <DependentUpon>CompanyUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UC\Doctor\DoctorSpecializationUC.resx">
+      <DependentUpon>DoctorSpecializationUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UC\Doctor\DoctorUC.resx">
+      <DependentUpon>DoctorUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UC\Master UC\MasterUC.resx">
+      <DependentUpon>MasterUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UC\MedicationUC.resx">
+      <DependentUpon>MedicationUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202310071355548_ITI-Pharmacy.resx">
+      <DependentUpon>202310071355548_ITI-Pharmacy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
