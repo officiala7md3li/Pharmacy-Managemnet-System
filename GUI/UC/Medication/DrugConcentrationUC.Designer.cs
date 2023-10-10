@@ -105,6 +105,10 @@
             this.Manager_Phone_TxtBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Manager_Phone_TxtBox.Name = "Manager_Phone_TxtBox";
             this.Manager_Phone_TxtBox.PasswordChar = '\0';
+<<<<<<< HEAD
+            this.Manager_Phone_TxtBox.PlaceholderText = "ادخل السعر";
+=======
+>>>>>>> 82fb517e7f4b17be5c981d929d2220962663e4a4
             this.Manager_Phone_TxtBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Manager_Phone_TxtBox.SelectedText = "";
             this.Manager_Phone_TxtBox.Size = new System.Drawing.Size(200, 36);
@@ -119,9 +123,18 @@
             this.Label4.Enabled = false;
             this.Label4.Font = new System.Drawing.Font("Cairo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label4.ForeColor = System.Drawing.Color.Gray;
+<<<<<<< HEAD
+            this.Label4.Location = new System.Drawing.Point(495, 259);
+            this.Label4.Name = "Label4";
+            this.Label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Label4.Size = new System.Drawing.Size(117, 23);
+            this.Label4.TabIndex = 393;
+            this.Label4.Text = "التركيز الخاص بالجرعه";
+=======
             this.Label4.Name = "Label4";
             this.Label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Label4.TabIndex = 393;
+>>>>>>> 82fb517e7f4b17be5c981d929d2220962663e4a4
             this.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Department_Phone_TxtBox
@@ -144,6 +157,10 @@
             this.Department_Phone_TxtBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Department_Phone_TxtBox.Name = "Department_Phone_TxtBox";
             this.Department_Phone_TxtBox.PasswordChar = '\0';
+<<<<<<< HEAD
+            this.Department_Phone_TxtBox.PlaceholderText = "ادخل التركيز الخاص بالجرعه";
+=======
+>>>>>>> 82fb517e7f4b17be5c981d929d2220962663e4a4
             this.Department_Phone_TxtBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Department_Phone_TxtBox.SelectedText = "";
             this.Department_Phone_TxtBox.Size = new System.Drawing.Size(451, 36);
@@ -196,7 +213,7 @@
             // 
             this.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox2.Image")));
-            this.PictureBox2.Location = new System.Drawing.Point(416, 9);
+            this.PictureBox2.Location = new System.Drawing.Point(474, 9);
             this.PictureBox2.Name = "PictureBox2";
             this.PictureBox2.Size = new System.Drawing.Size(30, 30);
             this.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -211,12 +228,12 @@
             this.label7.Enabled = false;
             this.label7.Font = new System.Drawing.Font("Cairo", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(365, 12);
+            this.label7.Location = new System.Drawing.Point(306, 12);
             this.label7.Name = "label7";
             this.label7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label7.Size = new System.Drawing.Size(49, 24);
+            this.label7.Size = new System.Drawing.Size(167, 24);
             this.label7.TabIndex = 426;
-            this.label7.Text = "الاطباء";
+            this.label7.Text = "الوحدات والتركيزات المختلفه";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DrugConcentrationUC

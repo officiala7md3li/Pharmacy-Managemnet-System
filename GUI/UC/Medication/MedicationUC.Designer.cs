@@ -276,7 +276,7 @@
             this.label6.Enabled = false;
             this.label6.Font = new System.Drawing.Font("Cairo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(458, 164);
+            this.label6.Location = new System.Drawing.Point(482, 164);
             this.label6.Name = "label6";
             this.label6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label6.Size = new System.Drawing.Size(43, 23);
@@ -662,7 +662,7 @@
             this.bunifuButton1.AllowAnimations = true;
             this.bunifuButton1.AllowMouseEffects = true;
             this.bunifuButton1.AllowToggling = false;
-            this.bunifuButton1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.bunifuButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuButton1.AnimationSpeed = 200;
             this.bunifuButton1.AutoGenerateColors = false;
             this.bunifuButton1.AutoRoundBorders = true;
@@ -748,7 +748,6 @@
             this.bunifuButton1.TextMarginLeft = 0;
             this.bunifuButton1.TextPadding = new System.Windows.Forms.Padding(-5, 0, 5, 0);
             this.bunifuButton1.UseDefaultRadiusAndThickness = true;
-            this.bunifuButton1.Visible = false;
             // 
             // MedicationUC
             // 
@@ -766,7 +765,10 @@
             this.Controls.Add(this.guna2TextBox5);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label9);
+<<<<<<< HEAD
+=======
             this.Controls.Add(this.guna2TextBox3);
+>>>>>>> 82fb517e7f4b17be5c981d929d2220962663e4a4
             this.Controls.Add(this.guna2TextBox4);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label7);
@@ -774,7 +776,10 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.guna2TextBox1);
+<<<<<<< HEAD
+=======
             this.Controls.Add(this.Manager_Phone_TxtBox);
+>>>>>>> 82fb517e7f4b17be5c981d929d2220962663e4a4
             this.Controls.Add(this.label6);
             this.Controls.Add(this.guna2ComboBox1);
             this.Controls.Add(this.Section_ComboBox);
@@ -795,7 +800,10 @@
             this.Controls.SetChildIndex(this.Section_ComboBox, 0);
             this.Controls.SetChildIndex(this.guna2ComboBox1, 0);
             this.Controls.SetChildIndex(this.label6, 0);
+<<<<<<< HEAD
+=======
             this.Controls.SetChildIndex(this.Manager_Phone_TxtBox, 0);
+>>>>>>> 82fb517e7f4b17be5c981d929d2220962663e4a4
             this.Controls.SetChildIndex(this.guna2TextBox1, 0);
             this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.label8, 0);
@@ -803,7 +811,10 @@
             this.Controls.SetChildIndex(this.label7, 0);
             this.Controls.SetChildIndex(this.label10, 0);
             this.Controls.SetChildIndex(this.guna2TextBox4, 0);
+<<<<<<< HEAD
+=======
             this.Controls.SetChildIndex(this.guna2TextBox3, 0);
+>>>>>>> 82fb517e7f4b17be5c981d929d2220962663e4a4
             this.Controls.SetChildIndex(this.label9, 0);
             this.Controls.SetChildIndex(this.label11, 0);
             this.Controls.SetChildIndex(this.guna2TextBox5, 0);
@@ -827,6 +838,14 @@
 
         internal System.Windows.Forms.PictureBox PictureBox2;
         private System.Windows.Forms.Label Label5;
+<<<<<<< HEAD
+        internal Guna.UI2.WinForms.Guna2Button Browse_Btn;
+        internal A7MD_Library.Pictures.A2PictureboxPro Username_Pic;
+        private System.Windows.Forms.Label label9;
+        internal Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        internal Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
+        private System.Windows.Forms.Label label10;
+=======
         private System.Windows.Forms.Label Label3;
         internal Guna.UI2.WinForms.Guna2TextBox Department_Name_TxtBox;
         internal Guna.UI2.WinForms.Guna2TextBox ID_TxtBox;
@@ -835,6 +854,7 @@
         private System.Windows.Forms.Label label2;
         internal Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private System.Windows.Forms.Label label6;
+>>>>>>> 82fb517e7f4b17be5c981d929d2220962663e4a4
         private System.Windows.Forms.Label label7;
         internal Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private System.Windows.Forms.Label label8;
@@ -843,19 +863,25 @@
         internal Guna.UI2.WinForms.Guna2TextBox Manager_Phone_TxtBox;
         private System.Windows.Forms.Label label6;
         internal Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+<<<<<<< HEAD
+        internal Guna.UI2.WinForms.Guna2ComboBox Section_ComboBox;
+        private System.Windows.Forms.Label Label3;
+        internal Guna.UI2.WinForms.Guna2TextBox Department_Name_TxtBox;
+        internal Guna.UI2.WinForms.Guna2TextBox ID_TxtBox;
+        private System.Windows.Forms.Label Label1;
+=======
         private System.Windows.Forms.Label label9;
         internal Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
         private System.Windows.Forms.Label label10;
+>>>>>>> 82fb517e7f4b17be5c981d929d2220962663e4a4
         private System.Windows.Forms.Label label4;
         internal Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
         private System.Windows.Forms.Label label11;
-        internal Guna.UI2.WinForms.Guna2Button Browse_Btn;
         private System.Windows.Forms.Label label12;
         internal Guna.UI2.WinForms.Guna2TextBox Barcode_Txtbox;
         internal Guna.UI2.WinForms.Guna2TextBox Qty_Txt;
         internal Guna.UI2.WinForms.Guna2TextBox Note_Txt;
         internal Guna.UI2.WinForms.Guna2TextBox Discount_Txt;
-        internal A7MD_Library.Pictures.A2PictureboxPro Username_Pic;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
     }
 }

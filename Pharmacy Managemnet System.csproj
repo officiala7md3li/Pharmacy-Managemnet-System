@@ -25,6 +25,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>preview</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,6 +35,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>preview</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="A7MD Library">
@@ -61,6 +63,7 @@
       <HintPath>packages\Guna.UI2.WinForms.2.0.4.5\lib\net48\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Activities.Presentation" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -90,16 +93,22 @@
     <Compile Include="GUI\Main Menu &amp; Helpers\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Main Menu &amp; Helpers\Helping Program\CMessageBox.cs">
+    <Compile Include="GUI\Main Menu &amp; Helpers\Helping Program\CustomMessageBox\CMessageBox.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Main Menu &amp; Helpers\Helping Program\CMessageBox.Designer.cs">
+    <Compile Include="GUI\Main Menu &amp; Helpers\Helping Program\CustomMessageBox\CMessageBox.Designer.cs">
       <DependentUpon>CMessageBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Main Menu &amp; Helpers\Helping Program\WaitLoaderForm.cs">
+    <Compile Include="GUI\Main Menu &amp; Helpers\Helping Program\SreachForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Main Menu &amp; Helpers\Helping Program\WaitLoaderForm.Designer.cs">
+    <Compile Include="GUI\Main Menu &amp; Helpers\Helping Program\SreachForm.Designer.cs">
+      <DependentUpon>SreachForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Main Menu &amp; Helpers\Helping Program\TransparentWaitForm\WaitLoaderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Main Menu &amp; Helpers\Helping Program\TransparentWaitForm\WaitLoaderForm.Designer.cs">
       <DependentUpon>WaitLoaderForm.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Main Menu &amp; Helpers\MainMenuForm.cs">
@@ -205,10 +214,13 @@
       <DependentUpon>WelcomeUC.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper\Messages_Show.cs" />
+<<<<<<< HEAD
+=======
     <Compile Include="Migrations\202310081512325_ITI-Pharmacy.cs" />
     <Compile Include="Migrations\202310081512325_ITI-Pharmacy.designer.cs">
       <DependentUpon>202310081512325_ITI-Pharmacy.cs</DependentUpon>
     </Compile>
+>>>>>>> 82fb517e7f4b17be5c981d929d2220962663e4a4
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Branch\Branch.cs" />
     <Compile Include="Model\Branch\BranchRepo.cs" />
@@ -218,6 +230,7 @@
     <Compile Include="Model\Doctor\DoctorRepo.cs" />
     <Compile Include="Model\Doctor\DoctorSpecialization.cs" />
     <Compile Include="Model\Doctor\DoctorSpecializationRepo.cs" />
+    <Compile Include="Model\HelpingModel.cs" />
     <Compile Include="Model\Interfaces\IPayment.cs" />
     <Compile Include="Model\Interfaces\IPerson.cs" />
     <Compile Include="Model\Interfaces\IRepo.cs" />
@@ -247,10 +260,13 @@
     <EmbeddedResource Include="GUI\Login\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Main Menu &amp; Helpers\Helping Program\CMessageBox.resx">
+    <EmbeddedResource Include="GUI\Main Menu &amp; Helpers\Helping Program\CustomMessageBox\CMessageBox.resx">
       <DependentUpon>CMessageBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Main Menu &amp; Helpers\Helping Program\WaitLoaderForm.resx">
+    <EmbeddedResource Include="GUI\Main Menu &amp; Helpers\Helping Program\SreachForm.resx">
+      <DependentUpon>SreachForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Main Menu &amp; Helpers\Helping Program\TransparentWaitForm\WaitLoaderForm.resx">
       <DependentUpon>WaitLoaderForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Main Menu &amp; Helpers\MainMenuForm.resx">
@@ -273,12 +289,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UC\Medication\DrugConcentrationUC.resx">
       <DependentUpon>DrugConcentrationUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UC\Master UC\MasterUC.resx">
       <DependentUpon>MasterUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UC\Medication\MedicationUC.resx">
       <DependentUpon>MedicationUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UC\Patient\PatientPaymentUC.resx">
       <DependentUpon>PatientPaymentUC.cs</DependentUpon>
@@ -304,9 +322,12 @@
     <EmbeddedResource Include="GUI\UC\Welcome\WelcomeUC.resx">
       <DependentUpon>WelcomeUC.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+=======
     <EmbeddedResource Include="Migrations\202310081512325_ITI-Pharmacy.resx">
       <DependentUpon>202310081512325_ITI-Pharmacy.cs</DependentUpon>
     </EmbeddedResource>
+>>>>>>> 82fb517e7f4b17be5c981d929d2220962663e4a4
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

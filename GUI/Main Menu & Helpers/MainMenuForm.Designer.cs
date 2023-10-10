@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenuForm));
-            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation2 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
             this.Elli1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.Exit_PictureBox = new Bunifu.UI.WinForms.BunifuImageButton();
             this.TabPage1 = new System.Windows.Forms.TabPage();
@@ -65,18 +65,6 @@
             this.Logout_Popup_Menu = new Guna.UI2.WinForms.Guna2TileButton();
             this.BunifuPages2 = new Bunifu.UI.WinForms.BunifuPages();
             this.Panel2 = new System.Windows.Forms.Panel();
-            this.welcomeUC1 = new Pharmacy_Managemnet_System.GUI.UC.WelcomeUC();
-            this.userUC1 = new Pharmacy_Managemnet_System.GUI.UC.UserUC();
-            this.supplierUC1 = new Pharmacy_Managemnet_System.GUI.UC.SupplierUC();
-            this.supplierPayment1 = new Pharmacy_Managemnet_System.GUI.UC.SupplierPayment();
-            this.patientUC1 = new Pharmacy_Managemnet_System.GUI.UC.PatientUC();
-            this.patientPaymentUC1 = new Pharmacy_Managemnet_System.GUI.UC.PatientPaymentUC();
-            this.medicationUC1 = new Pharmacy_Managemnet_System.GUI.UC.MedicationUC();
-            this.doctorSpecialization1 = new Pharmacy_Managemnet_System.GUI.UC.DoctorSpecializationUC();
-            this.doctorUC1 = new Pharmacy_Managemnet_System.GUI.UC.DoctorUC();
-            this.companyUC1 = new Pharmacy_Managemnet_System.GUI.UC.CompanyUC();
-            this.branchUC1 = new Pharmacy_Managemnet_System.GUI.UC.Branch.BranchUC();
-            this.settingsUC1 = new Pharmacy_Managemnet_System.GUI.UC.User.SettingsUC();
             this.Form_Dock = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.Popup_Menu_TMR = new System.Windows.Forms.Timer(this.components);
             this.Support_pnl = new Guna.UI2.WinForms.Guna2Panel();
@@ -110,6 +98,18 @@
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.FormDock = new Bunifu.UI.WinForms.BunifuFormDock();
             this.bunifuFormResizer1 = new Bunifu.UI.WinForms.BunifuFormResizer(this.components);
+            this.welcomeUC1 = new Pharmacy_Managemnet_System.GUI.UC.WelcomeUC();
+            this.userUC1 = new Pharmacy_Managemnet_System.GUI.UC.UserUC();
+            this.supplierUC1 = new Pharmacy_Managemnet_System.GUI.UC.SupplierUC();
+            this.supplierPayment1 = new Pharmacy_Managemnet_System.GUI.UC.SupplierPayment();
+            this.patientUC1 = new Pharmacy_Managemnet_System.GUI.UC.PatientUC();
+            this.patientPaymentUC1 = new Pharmacy_Managemnet_System.GUI.UC.PatientPaymentUC();
+            this.medicationUC1 = new Pharmacy_Managemnet_System.GUI.UC.MedicationUC();
+            this.doctorSpecialization1 = new Pharmacy_Managemnet_System.GUI.UC.DoctorSpecializationUC();
+            this.doctorUC1 = new Pharmacy_Managemnet_System.GUI.UC.DoctorUC();
+            this.companyUC1 = new Pharmacy_Managemnet_System.GUI.UC.CompanyUC();
+            this.branchUC1 = new Pharmacy_Managemnet_System.GUI.UC.Branch.BranchUC();
+            this.settingsUC1 = new Pharmacy_Managemnet_System.GUI.UC.User.SettingsUC();
             this.TabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Auth_Pic)).BeginInit();
             this.TabPage4.SuspendLayout();
@@ -801,22 +801,22 @@
             this.BunifuPages2.SelectedIndex = 0;
             this.BunifuPages2.Size = new System.Drawing.Size(1026, 650);
             this.BunifuPages2.TabIndex = 252;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.BunifuPages2.Transition = animation2;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.BunifuPages2.Transition = animation1;
             this.BunifuPages2.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Scale;
             this.BunifuPages2.Visible = false;
             // 
@@ -839,255 +839,6 @@
             this.Panel2.Name = "Panel2";
             this.Panel2.Size = new System.Drawing.Size(820, 546);
             this.Panel2.TabIndex = 249;
-            // 
-            // welcomeUC1
-            // 
-            this.welcomeUC1.Enabled = false;
-            this.welcomeUC1.Location = new System.Drawing.Point(5, 39);
-            this.welcomeUC1.Name = "welcomeUC1";
-            this.welcomeUC1.Size = new System.Drawing.Size(810, 468);
-            this.welcomeUC1.TabIndex = 10;
-            this.welcomeUC1.Visible = false;
-            // 
-            // userUC1
-            // 
-            this.userUC1.DeleteBtnVisible = false;
-            this.userUC1.EditBtnVisible = false;
-            this.userUC1.EditDataCheck = false;
-            this.userUC1.Enabled = false;
-            this.userUC1.FileFromDatabaseProperty = false;
-            this.userUC1.FileNameProperty = null;
-            this.userUC1.FileNumFromDBProperty = null;
-            this.userUC1.FileUploadedProperty = false;
-            this.userUC1.Location = new System.Drawing.Point(6, 39);
-            this.userUC1.MasterUCLock = true;
-            this.userUC1.MemoStream = null;
-            this.userUC1.Name = "userUC1";
-            this.userUC1.NewBtnVisible = true;
-            this.userUC1.PrintBtnVisible = false;
-            this.userUC1.ReceivedByteProperty = null;
-            this.userUC1.SaveBtnVisible = false;
-            this.userUC1.SearchBtnVisible = false;
-            this.userUC1.Size = new System.Drawing.Size(810, 540);
-            this.userUC1.TabIndex = 9;
-            this.userUC1.Visible = false;
-            // 
-            // supplierUC1
-            // 
-            this.supplierUC1.DeleteBtnVisible = false;
-            this.supplierUC1.EditBtnVisible = false;
-            this.supplierUC1.EditDataCheck = false;
-            this.supplierUC1.Enabled = false;
-            this.supplierUC1.FileFromDatabaseProperty = false;
-            this.supplierUC1.FileNameProperty = null;
-            this.supplierUC1.FileNumFromDBProperty = null;
-            this.supplierUC1.FileUploadedProperty = false;
-            this.supplierUC1.Location = new System.Drawing.Point(5, 39);
-            this.supplierUC1.MasterUCLock = true;
-            this.supplierUC1.MemoStream = null;
-            this.supplierUC1.Name = "supplierUC1";
-            this.supplierUC1.NewBtnVisible = true;
-            this.supplierUC1.PrintBtnVisible = false;
-            this.supplierUC1.ReceivedByteProperty = null;
-            this.supplierUC1.SaveBtnVisible = false;
-            this.supplierUC1.SearchBtnVisible = false;
-            this.supplierUC1.Size = new System.Drawing.Size(810, 468);
-            this.supplierUC1.TabIndex = 8;
-            this.supplierUC1.Visible = false;
-            // 
-            // supplierPayment1
-            // 
-            this.supplierPayment1.DeleteBtnVisible = false;
-            this.supplierPayment1.EditBtnVisible = false;
-            this.supplierPayment1.EditDataCheck = false;
-            this.supplierPayment1.Enabled = false;
-            this.supplierPayment1.FileFromDatabaseProperty = false;
-            this.supplierPayment1.FileNameProperty = null;
-            this.supplierPayment1.FileNumFromDBProperty = null;
-            this.supplierPayment1.FileUploadedProperty = false;
-            this.supplierPayment1.Location = new System.Drawing.Point(5, 39);
-            this.supplierPayment1.MasterUCLock = true;
-            this.supplierPayment1.MemoStream = null;
-            this.supplierPayment1.Name = "supplierPayment1";
-            this.supplierPayment1.NewBtnVisible = true;
-            this.supplierPayment1.PrintBtnVisible = false;
-            this.supplierPayment1.ReceivedByteProperty = null;
-            this.supplierPayment1.SaveBtnVisible = false;
-            this.supplierPayment1.SearchBtnVisible = false;
-            this.supplierPayment1.Size = new System.Drawing.Size(810, 468);
-            this.supplierPayment1.TabIndex = 7;
-            this.supplierPayment1.Visible = false;
-            // 
-            // patientUC1
-            // 
-            this.patientUC1.DeleteBtnVisible = false;
-            this.patientUC1.EditBtnVisible = false;
-            this.patientUC1.EditDataCheck = false;
-            this.patientUC1.Enabled = false;
-            this.patientUC1.FileFromDatabaseProperty = false;
-            this.patientUC1.FileNameProperty = null;
-            this.patientUC1.FileNumFromDBProperty = null;
-            this.patientUC1.FileUploadedProperty = false;
-            this.patientUC1.Location = new System.Drawing.Point(5, 39);
-            this.patientUC1.MasterUCLock = true;
-            this.patientUC1.MemoStream = null;
-            this.patientUC1.Name = "patientUC1";
-            this.patientUC1.NewBtnVisible = true;
-            this.patientUC1.PrintBtnVisible = false;
-            this.patientUC1.ReceivedByteProperty = null;
-            this.patientUC1.SaveBtnVisible = false;
-            this.patientUC1.SearchBtnVisible = false;
-            this.patientUC1.Size = new System.Drawing.Size(810, 468);
-            this.patientUC1.TabIndex = 6;
-            this.patientUC1.Visible = false;
-            // 
-            // patientPaymentUC1
-            // 
-            this.patientPaymentUC1.DeleteBtnVisible = false;
-            this.patientPaymentUC1.EditBtnVisible = false;
-            this.patientPaymentUC1.EditDataCheck = false;
-            this.patientPaymentUC1.Enabled = false;
-            this.patientPaymentUC1.FileFromDatabaseProperty = false;
-            this.patientPaymentUC1.FileNameProperty = null;
-            this.patientPaymentUC1.FileNumFromDBProperty = null;
-            this.patientPaymentUC1.FileUploadedProperty = false;
-            this.patientPaymentUC1.Location = new System.Drawing.Point(5, 39);
-            this.patientPaymentUC1.MasterUCLock = true;
-            this.patientPaymentUC1.MemoStream = null;
-            this.patientPaymentUC1.Name = "patientPaymentUC1";
-            this.patientPaymentUC1.NewBtnVisible = true;
-            this.patientPaymentUC1.PrintBtnVisible = false;
-            this.patientPaymentUC1.ReceivedByteProperty = null;
-            this.patientPaymentUC1.SaveBtnVisible = false;
-            this.patientPaymentUC1.SearchBtnVisible = false;
-            this.patientPaymentUC1.Size = new System.Drawing.Size(810, 468);
-            this.patientPaymentUC1.TabIndex = 5;
-            this.patientPaymentUC1.Visible = false;
-            // 
-            // medicationUC1
-            // 
-            this.medicationUC1.DeleteBtnVisible = true;
-            this.medicationUC1.EditBtnVisible = true;
-            this.medicationUC1.EditDataCheck = true;
-            this.medicationUC1.Enabled = false;
-            this.medicationUC1.FileFromDatabaseProperty = false;
-            this.medicationUC1.FileNameProperty = null;
-            this.medicationUC1.FileNumFromDBProperty = null;
-            this.medicationUC1.FileUploadedProperty = false;
-            this.medicationUC1.Location = new System.Drawing.Point(9, 37);
-            this.medicationUC1.MasterUCLock = false;
-            this.medicationUC1.MemoStream = null;
-            this.medicationUC1.Name = "medicationUC1";
-            this.medicationUC1.NewBtnVisible = false;
-            this.medicationUC1.PrintBtnVisible = true;
-            this.medicationUC1.ReceivedByteProperty = null;
-            this.medicationUC1.SaveBtnVisible = true;
-            this.medicationUC1.SearchBtnVisible = true;
-            this.medicationUC1.Size = new System.Drawing.Size(810, 540);
-            this.medicationUC1.TabIndex = 4;
-            this.medicationUC1.Visible = false;
-            // 
-            // doctorSpecialization1
-            // 
-            this.doctorSpecialization1.DeleteBtnVisible = false;
-            this.doctorSpecialization1.EditBtnVisible = false;
-            this.doctorSpecialization1.EditDataCheck = false;
-            this.doctorSpecialization1.Enabled = false;
-            this.doctorSpecialization1.FileFromDatabaseProperty = false;
-            this.doctorSpecialization1.FileNameProperty = null;
-            this.doctorSpecialization1.FileNumFromDBProperty = null;
-            this.doctorSpecialization1.FileUploadedProperty = false;
-            this.doctorSpecialization1.Location = new System.Drawing.Point(5, 39);
-            this.doctorSpecialization1.MasterUCLock = true;
-            this.doctorSpecialization1.MemoStream = null;
-            this.doctorSpecialization1.Name = "doctorSpecialization1";
-            this.doctorSpecialization1.NewBtnVisible = true;
-            this.doctorSpecialization1.PrintBtnVisible = false;
-            this.doctorSpecialization1.ReceivedByteProperty = null;
-            this.doctorSpecialization1.SaveBtnVisible = false;
-            this.doctorSpecialization1.SearchBtnVisible = false;
-            this.doctorSpecialization1.Size = new System.Drawing.Size(810, 468);
-            this.doctorSpecialization1.TabIndex = 3;
-            this.doctorSpecialization1.Visible = false;
-            // 
-            // doctorUC1
-            // 
-            this.doctorUC1.DeleteBtnVisible = false;
-            this.doctorUC1.EditBtnVisible = false;
-            this.doctorUC1.EditDataCheck = false;
-            this.doctorUC1.Enabled = false;
-            this.doctorUC1.FileFromDatabaseProperty = false;
-            this.doctorUC1.FileNameProperty = null;
-            this.doctorUC1.FileNumFromDBProperty = null;
-            this.doctorUC1.FileUploadedProperty = false;
-            this.doctorUC1.Location = new System.Drawing.Point(5, 39);
-            this.doctorUC1.MasterUCLock = true;
-            this.doctorUC1.MemoStream = null;
-            this.doctorUC1.Name = "doctorUC1";
-            this.doctorUC1.NewBtnVisible = true;
-            this.doctorUC1.PrintBtnVisible = false;
-            this.doctorUC1.ReceivedByteProperty = null;
-            this.doctorUC1.SaveBtnVisible = false;
-            this.doctorUC1.SearchBtnVisible = false;
-            this.doctorUC1.Size = new System.Drawing.Size(810, 468);
-            this.doctorUC1.TabIndex = 2;
-            this.doctorUC1.Visible = false;
-            // 
-            // companyUC1
-            // 
-            this.companyUC1.DeleteBtnVisible = false;
-            this.companyUC1.EditBtnVisible = false;
-            this.companyUC1.EditDataCheck = false;
-            this.companyUC1.Enabled = false;
-            this.companyUC1.FileFromDatabaseProperty = false;
-            this.companyUC1.FileNameProperty = null;
-            this.companyUC1.FileNumFromDBProperty = null;
-            this.companyUC1.FileUploadedProperty = false;
-            this.companyUC1.Location = new System.Drawing.Point(5, 39);
-            this.companyUC1.MasterUCLock = true;
-            this.companyUC1.MemoStream = null;
-            this.companyUC1.Name = "companyUC1";
-            this.companyUC1.NewBtnVisible = true;
-            this.companyUC1.PrintBtnVisible = false;
-            this.companyUC1.ReceivedByteProperty = null;
-            this.companyUC1.SaveBtnVisible = false;
-            this.companyUC1.SearchBtnVisible = false;
-            this.companyUC1.Size = new System.Drawing.Size(810, 468);
-            this.companyUC1.TabIndex = 1;
-            this.companyUC1.Visible = false;
-            // 
-            // branchUC1
-            // 
-            this.branchUC1.DeleteBtnVisible = false;
-            this.branchUC1.EditBtnVisible = false;
-            this.branchUC1.EditDataCheck = false;
-            this.branchUC1.Enabled = false;
-            this.branchUC1.FileFromDatabaseProperty = false;
-            this.branchUC1.FileNameProperty = null;
-            this.branchUC1.FileNumFromDBProperty = null;
-            this.branchUC1.FileUploadedProperty = false;
-            this.branchUC1.Location = new System.Drawing.Point(5, 39);
-            this.branchUC1.MasterUCLock = true;
-            this.branchUC1.MemoStream = null;
-            this.branchUC1.Name = "branchUC1";
-            this.branchUC1.NewBtnVisible = true;
-            this.branchUC1.PrintBtnVisible = false;
-            this.branchUC1.ReceivedByteProperty = null;
-            this.branchUC1.SaveBtnVisible = false;
-            this.branchUC1.SearchBtnVisible = false;
-            this.branchUC1.Size = new System.Drawing.Size(810, 468);
-            this.branchUC1.TabIndex = 0;
-            this.branchUC1.Visible = false;
-            // 
-            // settingsUC1
-            // 
-            this.settingsUC1.Enabled = false;
-            this.settingsUC1.Location = new System.Drawing.Point(140, 140);
-            this.settingsUC1.Master_UC_Lock = false;
-            this.settingsUC1.Name = "settingsUC1";
-            this.settingsUC1.Size = new System.Drawing.Size(810, 468);
-            this.settingsUC1.TabIndex = 11;
-            this.settingsUC1.Visible = false;
             // 
             // Form_Dock
             // 
@@ -1710,6 +1461,255 @@
             this.bunifuFormResizer1.Enabled = true;
             this.bunifuFormResizer1.ParentForm = this;
             this.bunifuFormResizer1.ResizeHandlesWidth = 6;
+            // 
+            // welcomeUC1
+            // 
+            this.welcomeUC1.Enabled = false;
+            this.welcomeUC1.Location = new System.Drawing.Point(5, 39);
+            this.welcomeUC1.Name = "welcomeUC1";
+            this.welcomeUC1.Size = new System.Drawing.Size(810, 468);
+            this.welcomeUC1.TabIndex = 10;
+            this.welcomeUC1.Visible = false;
+            // 
+            // userUC1
+            // 
+            this.userUC1.DeleteBtnVisible = false;
+            this.userUC1.EditBtnVisible = false;
+            this.userUC1.EditDataCheck = false;
+            this.userUC1.Enabled = false;
+            this.userUC1.FileFromDatabaseProperty = false;
+            this.userUC1.FileNameProperty = null;
+            this.userUC1.FileNumFromDBProperty = null;
+            this.userUC1.FileUploadedProperty = false;
+            this.userUC1.Location = new System.Drawing.Point(6, 39);
+            this.userUC1.MasterUCLock = true;
+            this.userUC1.MemoStream = null;
+            this.userUC1.Name = "userUC1";
+            this.userUC1.NewBtnVisible = true;
+            this.userUC1.PrintBtnVisible = false;
+            this.userUC1.ReceivedByteProperty = null;
+            this.userUC1.SaveBtnVisible = false;
+            this.userUC1.SearchBtnVisible = false;
+            this.userUC1.Size = new System.Drawing.Size(810, 540);
+            this.userUC1.TabIndex = 9;
+            this.userUC1.Visible = false;
+            // 
+            // supplierUC1
+            // 
+            this.supplierUC1.DeleteBtnVisible = false;
+            this.supplierUC1.EditBtnVisible = false;
+            this.supplierUC1.EditDataCheck = false;
+            this.supplierUC1.Enabled = false;
+            this.supplierUC1.FileFromDatabaseProperty = false;
+            this.supplierUC1.FileNameProperty = null;
+            this.supplierUC1.FileNumFromDBProperty = null;
+            this.supplierUC1.FileUploadedProperty = false;
+            this.supplierUC1.Location = new System.Drawing.Point(5, 39);
+            this.supplierUC1.MasterUCLock = true;
+            this.supplierUC1.MemoStream = null;
+            this.supplierUC1.Name = "supplierUC1";
+            this.supplierUC1.NewBtnVisible = true;
+            this.supplierUC1.PrintBtnVisible = false;
+            this.supplierUC1.ReceivedByteProperty = null;
+            this.supplierUC1.SaveBtnVisible = false;
+            this.supplierUC1.SearchBtnVisible = false;
+            this.supplierUC1.Size = new System.Drawing.Size(810, 468);
+            this.supplierUC1.TabIndex = 8;
+            this.supplierUC1.Visible = false;
+            // 
+            // supplierPayment1
+            // 
+            this.supplierPayment1.DeleteBtnVisible = false;
+            this.supplierPayment1.EditBtnVisible = false;
+            this.supplierPayment1.EditDataCheck = false;
+            this.supplierPayment1.Enabled = false;
+            this.supplierPayment1.FileFromDatabaseProperty = false;
+            this.supplierPayment1.FileNameProperty = null;
+            this.supplierPayment1.FileNumFromDBProperty = null;
+            this.supplierPayment1.FileUploadedProperty = false;
+            this.supplierPayment1.Location = new System.Drawing.Point(5, 39);
+            this.supplierPayment1.MasterUCLock = true;
+            this.supplierPayment1.MemoStream = null;
+            this.supplierPayment1.Name = "supplierPayment1";
+            this.supplierPayment1.NewBtnVisible = true;
+            this.supplierPayment1.PrintBtnVisible = false;
+            this.supplierPayment1.ReceivedByteProperty = null;
+            this.supplierPayment1.SaveBtnVisible = false;
+            this.supplierPayment1.SearchBtnVisible = false;
+            this.supplierPayment1.Size = new System.Drawing.Size(810, 468);
+            this.supplierPayment1.TabIndex = 7;
+            this.supplierPayment1.Visible = false;
+            // 
+            // patientUC1
+            // 
+            this.patientUC1.DeleteBtnVisible = false;
+            this.patientUC1.EditBtnVisible = false;
+            this.patientUC1.EditDataCheck = false;
+            this.patientUC1.Enabled = false;
+            this.patientUC1.FileFromDatabaseProperty = false;
+            this.patientUC1.FileNameProperty = null;
+            this.patientUC1.FileNumFromDBProperty = null;
+            this.patientUC1.FileUploadedProperty = false;
+            this.patientUC1.Location = new System.Drawing.Point(5, 39);
+            this.patientUC1.MasterUCLock = true;
+            this.patientUC1.MemoStream = null;
+            this.patientUC1.Name = "patientUC1";
+            this.patientUC1.NewBtnVisible = true;
+            this.patientUC1.PrintBtnVisible = false;
+            this.patientUC1.ReceivedByteProperty = null;
+            this.patientUC1.SaveBtnVisible = false;
+            this.patientUC1.SearchBtnVisible = false;
+            this.patientUC1.Size = new System.Drawing.Size(810, 468);
+            this.patientUC1.TabIndex = 6;
+            this.patientUC1.Visible = false;
+            // 
+            // patientPaymentUC1
+            // 
+            this.patientPaymentUC1.DeleteBtnVisible = false;
+            this.patientPaymentUC1.EditBtnVisible = false;
+            this.patientPaymentUC1.EditDataCheck = false;
+            this.patientPaymentUC1.Enabled = false;
+            this.patientPaymentUC1.FileFromDatabaseProperty = false;
+            this.patientPaymentUC1.FileNameProperty = null;
+            this.patientPaymentUC1.FileNumFromDBProperty = null;
+            this.patientPaymentUC1.FileUploadedProperty = false;
+            this.patientPaymentUC1.Location = new System.Drawing.Point(5, 39);
+            this.patientPaymentUC1.MasterUCLock = true;
+            this.patientPaymentUC1.MemoStream = null;
+            this.patientPaymentUC1.Name = "patientPaymentUC1";
+            this.patientPaymentUC1.NewBtnVisible = true;
+            this.patientPaymentUC1.PrintBtnVisible = false;
+            this.patientPaymentUC1.ReceivedByteProperty = null;
+            this.patientPaymentUC1.SaveBtnVisible = false;
+            this.patientPaymentUC1.SearchBtnVisible = false;
+            this.patientPaymentUC1.Size = new System.Drawing.Size(810, 468);
+            this.patientPaymentUC1.TabIndex = 5;
+            this.patientPaymentUC1.Visible = false;
+            // 
+            // medicationUC1
+            // 
+            this.medicationUC1.DeleteBtnVisible = true;
+            this.medicationUC1.EditBtnVisible = true;
+            this.medicationUC1.EditDataCheck = true;
+            this.medicationUC1.Enabled = false;
+            this.medicationUC1.FileFromDatabaseProperty = false;
+            this.medicationUC1.FileNameProperty = null;
+            this.medicationUC1.FileNumFromDBProperty = null;
+            this.medicationUC1.FileUploadedProperty = false;
+            this.medicationUC1.Location = new System.Drawing.Point(9, 37);
+            this.medicationUC1.MasterUCLock = false;
+            this.medicationUC1.MemoStream = null;
+            this.medicationUC1.Name = "medicationUC1";
+            this.medicationUC1.NewBtnVisible = false;
+            this.medicationUC1.PrintBtnVisible = true;
+            this.medicationUC1.ReceivedByteProperty = null;
+            this.medicationUC1.SaveBtnVisible = true;
+            this.medicationUC1.SearchBtnVisible = true;
+            this.medicationUC1.Size = new System.Drawing.Size(810, 540);
+            this.medicationUC1.TabIndex = 4;
+            this.medicationUC1.Visible = false;
+            // 
+            // doctorSpecialization1
+            // 
+            this.doctorSpecialization1.DeleteBtnVisible = false;
+            this.doctorSpecialization1.EditBtnVisible = false;
+            this.doctorSpecialization1.EditDataCheck = false;
+            this.doctorSpecialization1.Enabled = false;
+            this.doctorSpecialization1.FileFromDatabaseProperty = false;
+            this.doctorSpecialization1.FileNameProperty = null;
+            this.doctorSpecialization1.FileNumFromDBProperty = null;
+            this.doctorSpecialization1.FileUploadedProperty = false;
+            this.doctorSpecialization1.Location = new System.Drawing.Point(5, 39);
+            this.doctorSpecialization1.MasterUCLock = true;
+            this.doctorSpecialization1.MemoStream = null;
+            this.doctorSpecialization1.Name = "doctorSpecialization1";
+            this.doctorSpecialization1.NewBtnVisible = true;
+            this.doctorSpecialization1.PrintBtnVisible = false;
+            this.doctorSpecialization1.ReceivedByteProperty = null;
+            this.doctorSpecialization1.SaveBtnVisible = false;
+            this.doctorSpecialization1.SearchBtnVisible = false;
+            this.doctorSpecialization1.Size = new System.Drawing.Size(810, 468);
+            this.doctorSpecialization1.TabIndex = 3;
+            this.doctorSpecialization1.Visible = false;
+            // 
+            // doctorUC1
+            // 
+            this.doctorUC1.DeleteBtnVisible = false;
+            this.doctorUC1.EditBtnVisible = false;
+            this.doctorUC1.EditDataCheck = false;
+            this.doctorUC1.Enabled = false;
+            this.doctorUC1.FileFromDatabaseProperty = false;
+            this.doctorUC1.FileNameProperty = null;
+            this.doctorUC1.FileNumFromDBProperty = null;
+            this.doctorUC1.FileUploadedProperty = false;
+            this.doctorUC1.Location = new System.Drawing.Point(5, 39);
+            this.doctorUC1.MasterUCLock = true;
+            this.doctorUC1.MemoStream = null;
+            this.doctorUC1.Name = "doctorUC1";
+            this.doctorUC1.NewBtnVisible = true;
+            this.doctorUC1.PrintBtnVisible = false;
+            this.doctorUC1.ReceivedByteProperty = null;
+            this.doctorUC1.SaveBtnVisible = false;
+            this.doctorUC1.SearchBtnVisible = false;
+            this.doctorUC1.Size = new System.Drawing.Size(810, 468);
+            this.doctorUC1.TabIndex = 2;
+            this.doctorUC1.Visible = false;
+            // 
+            // companyUC1
+            // 
+            this.companyUC1.DeleteBtnVisible = false;
+            this.companyUC1.EditBtnVisible = false;
+            this.companyUC1.EditDataCheck = false;
+            this.companyUC1.Enabled = false;
+            this.companyUC1.FileFromDatabaseProperty = false;
+            this.companyUC1.FileNameProperty = null;
+            this.companyUC1.FileNumFromDBProperty = null;
+            this.companyUC1.FileUploadedProperty = false;
+            this.companyUC1.Location = new System.Drawing.Point(5, 39);
+            this.companyUC1.MasterUCLock = true;
+            this.companyUC1.MemoStream = null;
+            this.companyUC1.Name = "companyUC1";
+            this.companyUC1.NewBtnVisible = true;
+            this.companyUC1.PrintBtnVisible = false;
+            this.companyUC1.ReceivedByteProperty = null;
+            this.companyUC1.SaveBtnVisible = false;
+            this.companyUC1.SearchBtnVisible = false;
+            this.companyUC1.Size = new System.Drawing.Size(810, 468);
+            this.companyUC1.TabIndex = 1;
+            this.companyUC1.Visible = false;
+            // 
+            // branchUC1
+            // 
+            this.branchUC1.DeleteBtnVisible = true;
+            this.branchUC1.EditBtnVisible = true;
+            this.branchUC1.EditDataCheck = false;
+            this.branchUC1.Enabled = false;
+            this.branchUC1.FileFromDatabaseProperty = false;
+            this.branchUC1.FileNameProperty = null;
+            this.branchUC1.FileNumFromDBProperty = null;
+            this.branchUC1.FileUploadedProperty = false;
+            this.branchUC1.Location = new System.Drawing.Point(5, 39);
+            this.branchUC1.MasterUCLock = false;
+            this.branchUC1.MemoStream = null;
+            this.branchUC1.Name = "branchUC1";
+            this.branchUC1.NewBtnVisible = true;
+            this.branchUC1.PrintBtnVisible = true;
+            this.branchUC1.ReceivedByteProperty = null;
+            this.branchUC1.SaveBtnVisible = true;
+            this.branchUC1.SearchBtnVisible = true;
+            this.branchUC1.Size = new System.Drawing.Size(810, 468);
+            this.branchUC1.TabIndex = 0;
+            this.branchUC1.Visible = false;
+            // 
+            // settingsUC1
+            // 
+            this.settingsUC1.Enabled = false;
+            this.settingsUC1.Location = new System.Drawing.Point(140, 140);
+            this.settingsUC1.Master_UC_Lock = false;
+            this.settingsUC1.Name = "settingsUC1";
+            this.settingsUC1.Size = new System.Drawing.Size(810, 468);
+            this.settingsUC1.TabIndex = 11;
+            this.settingsUC1.Visible = false;
             // 
             // MainMenuForm
             // 
