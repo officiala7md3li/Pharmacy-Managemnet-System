@@ -1,0 +1,21 @@
+name: .NET Build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v2
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v2
+    - name: Restore NuGet Packages
+      run: nuget restore "Pharmacy Managemnet System.sln"
+    - name: Build Solution
+      run: msbuild "Pharmacy Managemnet System.sln" /p:Configuration=Release
